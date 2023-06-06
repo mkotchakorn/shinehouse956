@@ -1,5 +1,10 @@
 import React from 'react';
+import AppLayout from '../component/AppLayout';
 
 export default function Home() {
-  return <div>Home</div>;
+  return (
+    <AppLayout noFooter>
+      <div className='container'>Index สวัสดี</div>
+    </AppLayout>
+  );
 }
