@@ -5,9 +5,9 @@ import Footer from './Footer';
 export default function AppLayout(props) {
   const { noFooter, children } = props;
   return (
-    <div className='content-wrap h-full overflow-hidden'>
+    <div className='content-wrap min-h-screen pb-8'>
       <Navbar />
-      <div className='section-content overflow-auto mt-20 max-h-[calc(100vh_-_80px)]'>{children}</div>
+      <div className='section-content pt-20'>{children}</div>
       {!noFooter && <Footer />}
     </div>
   );

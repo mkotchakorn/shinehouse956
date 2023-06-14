@@ -4,30 +4,38 @@ import Portfolio from '../pages/portfolio';
 import Process from '../pages/process';
 import Contact from '../pages/contact';
 
+export const routeName = {
+  home: '/',
+  about: '/about',
+  portfolio: '/portfolio',
+  precess: '/process',
+  contact: '/contacts',
+};
+
 export const router = [
   {
     name: 'Home',
-    path: '/',
+    path: routeName.home,
     element: <Home />,
   },
   {
     name: 'About Us',
-    path: '/about',
+    path: routeName.about,
     element: <About />,
   },
   {
     name: 'Portfolio',
-    path: '/portfolio',
+    path: routeName.portfolio,
     element: <Portfolio />,
   },
   {
     name: 'Process',
-    path: '/process',
+    path: routeName.precess,
     element: <Process />,
   },
   {
     name: 'Contacts',
-    path: '/contacts',
+    path: routeName.contact,
     element: <Contact />,
   },
 ];
