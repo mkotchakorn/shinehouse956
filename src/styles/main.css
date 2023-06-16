@@ -1,10 +1,11 @@
 @import url('./navbar.css');
 @import url('./banner.css');
+@import url('./portfolio.css');
 
 .container {
   @apply max-w-screen-lg mx-auto px-4 xl:px-8 !important;
 }
 
 .card {
-  @apply mt-6 p-4 xl:py-10 xl:px-14 bg-white/50 rounded-3xl xl:rounded-[38px];
+  @apply mt-6 p-4 xl:py-8 xl:px-14 bg-background/40 rounded-3xl xl:rounded-[38px];
 }

@@ -9,7 +9,7 @@ export default function Process() {
   return (
     <AppLayout>
       <div className='container'>
-        <div className='card mt-10'>Process</div>
+        <div className='pt-10'>under construction</div>
       </div>
     </AppLayout>
   );

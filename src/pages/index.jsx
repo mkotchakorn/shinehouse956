@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import AppLayout from '../component/AppLayout';
 import Banner from '../component/Banner';
 import SectionAbout from '../component/section/About';
+import SectionPortfolio from '../component/section/Portfolio';
 import SectionContact from '../component/section/Contact';
 
 export default function Home() {
@@ -14,11 +15,8 @@ export default function Home() {
       <Banner />
       <div className='container'>
         <SectionAbout />
-
-        <div className='card'>portfolio</div>
-
-        <div className='card'>process</div>
-
+        <SectionPortfolio canSeeMore show={8} />
+        <div className='card'>under construction</div>
         <SectionContact />
       </div>
     </AppLayout>

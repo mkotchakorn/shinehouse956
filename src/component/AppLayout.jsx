@@ -5,10 +5,12 @@ import Footer from './Footer';
 export default function AppLayout(props) {
   const { noFooter, children } = props;
   return (
-    <div className='content-wrap min-h-screen pb-8'>
+    <div className='content-wrap'>
       <Navbar />
-      <div className='section-content pt-20'>{children}</div>
-      {!noFooter && <Footer />}
+      <div className='section-content'>
+        {children}
+        {!noFooter && <Footer />}
+      </div>
     </div>
   );
 }

@@ -65,7 +65,7 @@ export default function SectionContact() {
           </div>
         </div>
       </div>
-      <div className='w-full md:w-1/2 card bg-black/50 md:py-8 xl:px-10'>
+      <div className='w-full md:w-1/2 card bg-black/40 md:py-8 xl:px-10'>
         <div>
           <p className='text-white font-medium text-base pb-2'>FULL NAME</p>
           <Input name='full_name' onChange={handleChange} value={getInTouchForm.full_name} />
@@ -85,7 +85,7 @@ export default function SectionContact() {
           <Textarea name='message' onChange={handleChange} value={getInTouchForm.message} rows={4} />
         </div>
         <div className='mt-4 text-center'>
-          <Button name='ยืนยัน' onClick={() => null} className='!px-10' />
+          <Button name='SEND' onClick={() => null} className='!px-10' />
         </div>
       </div>
     </div>

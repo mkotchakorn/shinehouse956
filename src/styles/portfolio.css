@@ -1,0 +1,7 @@
+.card-portfolio img {
+  @apply transition-all duration-500;
+}
+
+.card-portfolio:hover img {
+  @apply scale-125;
+}

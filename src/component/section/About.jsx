@@ -17,7 +17,7 @@ export default function SectionAbout(props) {
             return (
               <p key={cpt} className='inline-block text-base font-bold text-secondary tracking-[2px]'>
                 {cpt}
-                {idx + 1 < about.concept.length && <span className='px-1'>•</span>}
+                {idx + 1 < about.concept.length && <span className='px-1 text-xl'>•</span>}
               </p>
             );
           })}

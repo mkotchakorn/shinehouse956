@@ -11,7 +11,7 @@ export default function About() {
   return (
     <AppLayout>
       <div className='container'>
-        <div className='mt-10'>
+        <div className='pt-10'>
           <SectionAbout onContact={() => (window.location.href = `${routeName.about}#contact`)} />
         </div>
       </div>

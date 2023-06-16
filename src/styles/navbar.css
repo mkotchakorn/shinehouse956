@@ -1,6 +1,6 @@
 @screen max_tablet {
   .navbar nav .nav-menu {
-    @apply fixed inset-0 bg-background/50 backdrop-blur flex-col py-0 h-0 transition-all duration-300 overflow-hidden;
+    @apply fixed inset-0 bg-background flex-col py-0 h-0 transition-all duration-300 overflow-hidden mt-16;
   }
 
   .navbar nav .nav-menu.isExpanded {

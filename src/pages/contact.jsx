@@ -10,7 +10,7 @@ export default function Contact() {
   return (
     <AppLayout noFooter>
       <div className='container'>
-        <div className='mt-10'>
+        <div className='pt-10'>
           <SectionContact />
         </div>
       </div>

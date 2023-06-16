@@ -7,7 +7,7 @@ module.exports = {
         primary: '#615546',
         secondary: '#A46833',
         primary_action: '#BB6E2A',
-        background: '#C5C5C5',
+        background: '#E9E9E9',
       },
       fontSize: {
         xxs: ['10px', '0.75rem'],
