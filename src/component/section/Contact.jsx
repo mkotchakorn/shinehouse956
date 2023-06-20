@@ -1,24 +1,84 @@
 import { useState } from 'react';
 import _ from 'lodash';
-import { contact } from '../../assets/data/contact/contact';
+// import emailjs from '@emailjs/browser';
 import Input from '../common/Input';
 import Textarea from '../common/Textarea';
 import Button from '../common/Button';
+import Spinner from '../common/Spinner';
+import { contact } from '../../assets/data/contact/contact';
+// import { emailJsConfig } from '../../constants/config';
 
-const inittialContact = {
+const initialForm = {
   full_name: '',
   email: '',
   phone: '',
   message: '',
 };
 
+const initialErrorForm = {
+  full_name: '',
+  email: '',
+  emailValidation: '',
+  phone: '',
+};
+
 export default function SectionContact() {
-  const [getInTouchForm, setGetInTouchForm] = useState(inittialContact);
+  const SENDING_TIME_OUT = 1000;
+  const [getInTouchForm, setGetInTouchForm] = useState(initialForm);
+  const [error, setError] = useState(initialErrorForm);
+  const [isSending, setIsSending] = useState(false);
+  const [isSendSuccess, setIsSendSuccess] = useState('');
 
   const handleChange = (e) => {
+    setError(initialErrorForm);
     const name = e.target.name;
-    const value = e.target.value;
+    let value = e.target.value;
+    if (name === 'email') {
+      const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+      setError({ ...error, emailValidation: !value.match(validRegex) ? 'Invalid email format.' : '' });
+    }
+    if (name === 'phone') {
+      value = value.replace(/[^0-9.]/g, '');
+    }
     setGetInTouchForm({ ...getInTouchForm, [name]: value });
+  };
+
+  const onSendForm = (e) => {
+    if (!getInTouchForm.full_name || !getInTouchForm.email || !getInTouchForm.phone || error.emailValidation) {
+      return setError({
+        full_name: !getInTouchForm.full_name ? 'Please enter your full name.' : '',
+        email: !getInTouchForm.email ? 'Please enter your email.' : '',
+        phone: !getInTouchForm.phone ? 'Please enter your phone.' : '',
+        emailValidation: error.emailValidation && getInTouchForm.email ? error.emailValidation : '',
+      });
+    }
+
+    setIsSending(true);
+    setTimeout(() => {
+      setIsSending(false);
+      setIsSendSuccess('Your message has been sent successfully.');
+    }, SENDING_TIME_OUT);
+    setTimeout(() => {
+      setIsSendSuccess('');
+      setGetInTouchForm(initialForm);
+    }, SENDING_TIME_OUT + 3000);
+    // emailjs.send(emailJsConfig.service_id, emailJsConfig.template_id, getInTouchForm, emailJsConfig.public_key).then(
+    //   () => {
+    //     setTimeout(() => {
+    //       setIsSending(false);
+    //       setIsSendSuccess('Your message has been sent successfully.');
+    //     }, SENDING_TIME_OUT);
+    //     setTimeout(() => {
+    //       setIsSendSuccess('');
+    //       setGetInTouchForm(initialForm);
+    //     }, SENDING_TIME_OUT + 3000);
+    //   },
+    //   (error) => {
+    //     setTimeout(() => {
+    //       setIsSending(false);
+    //     }, SENDING_TIME_OUT);
+    //   }
+    // );
   };
 
   return (
@@ -66,19 +126,19 @@ export default function SectionContact() {
           </div>
         </div>
       </div>
-      <div className='flex flex-col w-full md:w-1/2 card bg-black/50 md:pt-8 md:pb-5 xl:px-10'>
+      <div className={`flex flex-col w-full md:w-1/2 card bg-black/50 md:pt-8 md:pb-5 xl:px-10 ${isSending || isSendSuccess ? 'pointer-events-none' : ''}`}>
         <div>
           <p className='text-white font-medium text-base pb-2'>FULL NAME</p>
-          <Input name='full_name' onChange={handleChange} value={getInTouchForm.full_name} />
+          <Input name='full_name' onChange={handleChange} value={getInTouchForm.full_name} error={error.full_name} />
         </div>
         <div className='sm:flex'>
           <div className='w-full pt-4 sm:pr-2'>
             <p className='text-white font-medium text-base pb-2'>E-MAIL</p>
-            <Input name='email' onChange={handleChange} value={getInTouchForm.email} />
+            <Input name='email' onChange={handleChange} value={getInTouchForm.email} error={error.emailValidation || error.email} />
           </div>
           <div className='w-full pt-4 sm:pl-2'>
             <p className='text-white font-medium text-base pb-2'>PHONE</p>
-            <Input name='phone' onChange={handleChange} value={getInTouchForm.phone} />
+            <Input name='phone' onChange={handleChange} value={getInTouchForm.phone} error={error.phone} />
           </div>
         </div>
         <div className='pt-4'>
@@ -86,7 +146,20 @@ export default function SectionContact() {
           <Textarea name='message' onChange={handleChange} value={getInTouchForm.message} rows={4} />
         </div>
         <div className='mt-auto text-center'>
-          <Button name='SEND' onClick={() => null} className='!px-10 mt-4' />
+          {(isSending && (
+            <Button
+              name={
+                <div className='flex items-center'>
+                  <Spinner />
+                  <span className='pl-3'>SEND</span>
+                </div>
+              }
+              className='!px-10 mt-4'
+            />
+          )) ||
+            (isSendSuccess && <p className='text-white text-base font-semibold h-8 flex items-center justify-center mt-4'>{isSendSuccess}</p>) || (
+              <Button name={'SEND'} onClick={onSendForm} className='!px-10 mt-4' />
+            )}
         </div>
       </div>
     </div>
