@@ -8,6 +8,7 @@ module.exports = {
         secondary: '#A46833',
         primary_action: '#BB6E2A',
         background: '#E9E9E9',
+        line: '#4CC764'
       },
       fontSize: {
         xxs: ['10px', '0.75rem'],

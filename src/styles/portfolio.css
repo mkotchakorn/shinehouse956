@@ -3,5 +3,13 @@
 }
 
 .card-portfolio:hover img {
-  @apply scale-125;
+  @apply xl:scale-110;
+}
+
+.card-portfolio .thumbnail {
+  @apply relative pt-[133.33%];
+}
+
+.card-portfolio .thumbnail img {
+  @apply absolute inset-0 w-full h-full object-cover;
 }

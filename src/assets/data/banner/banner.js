@@ -1,6 +1,6 @@
-import bg_1 from './1.jpg';
-import bg_2 from './2.jpg';
-import bg_3 from './3.jpg';
+import bg_1 from './banner_1.jpg';
+import bg_2 from './banner_2.jpg';
+import bg_3 from './banner_3.jpg';
 
 export const banners = [
   {

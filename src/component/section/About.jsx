@@ -1,4 +1,5 @@
 import React from 'react';
+import _ from 'lodash';
 import { useNavigate } from 'react-router-dom';
 import Button from '../common/Button';
 import { routeName } from '../../routes/routes';
@@ -13,7 +14,7 @@ export default function SectionAbout(props) {
         <img src={about.banner} alt='about' className='mx-auto max-w-[300px] flex-none object-cover hidden lg:block' />
         <div className='pt-4 sm:pt-0 lg:pl-4 xl:pl-8 flex-1'>
           <p className='font-bold text-4xl tracking-[3px] mb-1'>{about.title}</p>
-          {about.concept.map((cpt, idx) => {
+          {_.map(about.concept, (cpt, idx) => {
             return (
               <p key={cpt} className='inline-block text-base font-bold text-secondary tracking-[2px]'>
                 {cpt}

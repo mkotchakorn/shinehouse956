@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import _ from 'lodash';
 import { contact } from '../../assets/data/contact/contact';
 import Input from '../common/Input';
 import Textarea from '../common/Textarea';
@@ -33,7 +34,7 @@ export default function SectionContact() {
             <div className='pt-6'>
               <p className='text-secondary font-semibold text-base'>CALL US</p>
               <div className='whitespace-pre-wrap font-medium pt-2'>
-                {contact.call.map((call, idx) => {
+                {_.map(contact.call, (call, idx) => {
                   return (
                     <a key={call} href={`tel:${call}`} className='hover:text-secondary transition-all duration-300'>
                       {call}
@@ -46,7 +47,7 @@ export default function SectionContact() {
             <div className='pt-6'>
               <p className='text-secondary font-semibold text-base'>GET IN TOUCH</p>
               <div className='flex items-center mt-2'>
-                {contact.get_in_touch.map((social) => {
+                {_.map(contact.get_in_touch, (social) => {
                   return (
                     <button
                       key={social.name}
@@ -65,7 +66,7 @@ export default function SectionContact() {
           </div>
         </div>
       </div>
-      <div className='w-full md:w-1/2 card bg-black/40 md:py-8 xl:px-10'>
+      <div className='flex flex-col w-full md:w-1/2 card bg-black/50 md:pt-8 md:pb-5 xl:px-10'>
         <div>
           <p className='text-white font-medium text-base pb-2'>FULL NAME</p>
           <Input name='full_name' onChange={handleChange} value={getInTouchForm.full_name} />
@@ -84,8 +85,8 @@ export default function SectionContact() {
           <p className='text-white font-medium text-base pb-2'>MESSAGE</p>
           <Textarea name='message' onChange={handleChange} value={getInTouchForm.message} rows={4} />
         </div>
-        <div className='mt-4 text-center'>
-          <Button name='SEND' onClick={() => null} className='!px-10' />
+        <div className='mt-auto text-center'>
+          <Button name='SEND' onClick={() => null} className='!px-10 mt-4' />
         </div>
       </div>
     </div>
