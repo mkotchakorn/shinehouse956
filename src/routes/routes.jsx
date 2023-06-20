@@ -9,7 +9,7 @@ export const routeName = {
   home: '/',
   about: '/about',
   portfolio: '/portfolio',
-  precess: '/process',
+  process: '/process',
   contact: '/contacts',
 };
 
@@ -40,7 +40,7 @@ export const router = [
   },
   {
     name: 'Process',
-    path: routeName.precess,
+    path: routeName.process,
     element: <Process />,
     show: true,
   },

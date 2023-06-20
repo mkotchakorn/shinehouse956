@@ -1,4 +1,5 @@
 import React from 'react';
+import SiteFooter from './SiteFooter';
 import Navbar from './Navbar';
 import Footer from './Footer';
 
@@ -11,6 +12,7 @@ export default function AppLayout(props) {
         {children}
         {!noFooter && <Footer />}
       </div>
+      <SiteFooter />
     </div>
   );
 }

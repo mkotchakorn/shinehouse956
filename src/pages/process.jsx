@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import AppLayout from '../component/AppLayout';
+import SectionProcess from '../component/section/Process';
 
 export default function Process() {
   useEffect(() => {
@@ -9,7 +10,9 @@ export default function Process() {
   return (
     <AppLayout>
       <div className='container'>
-        <div className='pt-10'>under construction</div>
+        <div className='pt-10'>
+          <SectionProcess canGotoContact />
+        </div>
       </div>
     </AppLayout>
   );
