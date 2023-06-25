@@ -10,7 +10,7 @@ export default function SectionProcess(props) {
 
   return (
     <div className='card'>
-      <div className='font-semibold text-3xl tracking-[1px]'>
+      <div className='font-semibold header tracking-[1px]'>
         <p>ขั้นตอนการออกแบบ</p>
         <p>
           และก่อสร้าง กับ <span className='tracking-[2px] sm:text-4xl text-secondary'>SHINE HOUSE</span>
