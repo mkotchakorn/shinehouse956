@@ -82,7 +82,7 @@ export default function SectionContact() {
   };
 
   return (
-    <div className='flex flex-col md:flex-row mb-12'>
+    <div className='flex flex-col md:flex-row mb-16 xl:mb-12'>
       <div className='w-full md:w-1/2 card md:py-8'>
         <p className='text-center font-semibold header tracking-[3px]'>CONTACT US</p>
         <div className='pt-6'>
