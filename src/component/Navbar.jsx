@@ -2,19 +2,13 @@ import { useState, useEffect } from 'react';
 import _ from 'lodash';
 import logo from '../assets/images/dLogo.png';
 import { router, routeName } from '../routes/routes';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark as faXMark } from '@fortawesome/free-solid-svg-icons';
 
 export default function Navbar() {
-  const location = useLocation();
   const navigate = useNavigate();
   const [isExpanded, setIsExpanded] = useState(false);
-
-  const getPathName = () => {
-    const route = location.pathname.substring(1).split('/');
-    return route[0];
-  };
 
   const gotoHome = () => navigate(routeName.home);
 
@@ -24,12 +18,12 @@ export default function Navbar() {
   }, [isExpanded]);
 
   return (
-    <div className={`fixed top-0 z-10 navbar w-full h-16 tablet:h-20`}>
+    <div className={`fixed top-0 z-10 navbar w-full h-16 tablet:h-navbar`}>
       <nav className='w-full h-full'>
-        <div className='container py-2 flex justify-between w-full h-full'>
+        <div className='container py-3 flex justify-between w-full h-full'>
           <div className='flex items-end cursor-pointer'>
             <img src={logo} alt='logo' onClick={gotoHome} className='w-auto h-full' />
-            <div onClick={gotoHome} className='text-xxs font-semibold pb-1'>
+            <div onClick={gotoHome} className='text-xxs font-semibold pl-2 -mb-[2px]'>
               <p>SHINE HOUSE 956</p>
               <p className='pt-[2px]'>COMPANY LIMITED</p>
             </div>
@@ -41,8 +35,7 @@ export default function Navbar() {
                 return (
                   <Link key={r.name} to={r.path} className='cursor-pointer'>
                     <div
-                      className={`tablet:ml-4 px-2 py-1 rounded-full border-2 border-primary uppercase text-sm w-[110px] text-center cursor-pointer transition-colors font-semibold hover:bg-primary hover:text-white 
-                        ${r.path.substring(1) === getPathName() ? 'bg-primary text-white' : ''}`}
+                      className={`tablet:ml-4 px-1 py-[2px] text-[13px] rounded-full border-2 border-primary uppercase text-sm w-[104px] text-center cursor-pointer transition-colors duration-200 font-semibold hover:bg-secondary hover:border-secondary hover:text-white`}
                     >
                       {r.name}
                     </div>

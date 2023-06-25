@@ -13,6 +13,9 @@ module.exports = {
       fontSize: {
         xxs: ['10px', '0.75rem'],
       },
+      height: {
+        navbar: '75px'
+      },
       screens: {
         tablet: '920px',
         max_tablet: { max: '920px' },

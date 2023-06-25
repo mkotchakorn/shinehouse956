@@ -19,16 +19,3 @@ body {
 #root {
   @apply h-full overflow-y-auto;
 }
-
-.content-wrap {
-  @apply flex flex-col overflow-hidden h-screen;
-}
-
-.section-content {
-  @apply h-full mt-16 tablet:mt-20 overflow-y-auto pb-10;
-  background-image: url('./assets/images/background.png');
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-}

@@ -1,0 +1,3 @@
+.site-menu-blog:hover > div {
+  @apply xl:fill-secondary xl:text-secondary transition-colors duration-200;
+}
