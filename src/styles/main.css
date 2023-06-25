@@ -1,9 +1,27 @@
 @import url('./navbar.css');
 @import url('./banner.css');
 @import url('./portfolio.css');
+@import url('./contact.css');
+
+.content-wrap {
+  @apply flex flex-col overflow-hidden h-screen;
+}
+
+.section-content {
+  @apply h-full mt-16 pb-8 tablet:mt-[theme('height.navbar')] overflow-y-auto;
+  background-image: url('../assets/images/background.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
 
 .container {
   @apply max-w-screen-lg mx-auto px-4 xl:px-8 !important;
+}
+
+.header {
+  @apply text-[28px] text-3xl;
 }
 
 .card {

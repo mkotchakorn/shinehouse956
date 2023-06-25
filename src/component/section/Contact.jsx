@@ -82,9 +82,9 @@ export default function SectionContact() {
   };
 
   return (
-    <div className='flex flex-col md:flex-row'>
+    <div className='flex flex-col md:flex-row mb-24 xl:mb-12'>
       <div className='w-full md:w-1/2 card md:py-8'>
-        <p className='text-center font-semibold text-3xl tracking-[3px]'>CONTACT US</p>
+        <p className='text-center font-semibold header tracking-[3px]'>CONTACT US</p>
         <div className='pt-6'>
           <p className='text-secondary font-semibold text-base'>ADDRESS</p>
           <p className='whitespace-pre-wrap font-medium pt-3'>{contact.address}</p>
