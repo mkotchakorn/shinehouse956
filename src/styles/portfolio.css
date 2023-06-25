@@ -1,15 +1,15 @@
-.card-portfolio img {
-  @apply transition-all duration-500;
+.card-thumbnail img {
+  @apply transition-transform duration-500 grayscale;
 }
 
-.card-portfolio:hover img {
-  @apply xl:scale-110;
+.card-thumbnail:hover img {
+  @apply xl:scale-110 grayscale-0;
 }
 
-.card-portfolio .thumbnail {
+.card-thumbnail .thumbnail {
   @apply relative pt-[133.33%];
 }
 
-.card-portfolio .thumbnail img {
+.card-thumbnail .thumbnail img {
   @apply absolute inset-0 w-full h-full object-cover;
 }
