@@ -34,7 +34,7 @@ export const router = [
   },
   {
     name: 'Portfolio',
-    path: `${routeName.portfolio}/:id`,
+    path: `${routeName.portfolio}/:type/:id`,
     element: <PortfolioId />,
     show: false,
   },

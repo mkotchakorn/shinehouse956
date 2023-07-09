@@ -5,6 +5,7 @@ import SectionAbout from '../component/section/About';
 import SectionPortfolio from '../component/section/Portfolio';
 import SectionProcess from '../component/section/Process';
 import SectionContact from '../component/section/Contact';
+import { portfoliosHome } from '../assets/data/portfolio/portfolio';
 
 export default function Home() {
   useEffect(() => {
@@ -16,7 +17,7 @@ export default function Home() {
       <Banner />
       <div className='container'>
         <SectionAbout />
-        <SectionPortfolio canSeeMore show={8} />
+        <SectionPortfolio data={portfoliosHome} canSeeMore />
         <SectionProcess />
         <SectionContact />
       </div>

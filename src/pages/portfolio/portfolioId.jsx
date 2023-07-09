@@ -2,7 +2,7 @@ import { useEffect } from 'react';
 import { useLocation, useNavigate } from 'react-router-dom';
 import _ from 'lodash';
 import AppLayout from '../../component/AppLayout';
-import { portfolios } from '../../assets/data/portfolio/portfolio';
+// import { portfolios } from '../../assets/data/portfolio/portfolio';
 import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '../../component/common/Button';
@@ -12,7 +12,7 @@ export default function PortfolioId() {
   const navigate = useNavigate();
   const location = useLocation();
   const _id = Number(_.last(location.pathname.substring(1).split('/')));
-  const portfolio = _id ? portfolios[_id - 1] : null;
+  // const portfolio = _id ? portfolios[_id - 1] : null;
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -23,7 +23,8 @@ export default function PortfolioId() {
       <div className='container'>
         <div className='pt-10'>
           <div className='card'>
-            {(portfolio && (
+            asd
+            {/* {(portfolio && (
               <div>
                 <p className='font-semibold text-3xl tracking-[3px] pb-2'>{portfolio.title}</p>
                 <div className='sm:flex'>
@@ -40,7 +41,7 @@ export default function PortfolioId() {
                 <p className='font-semibold text-3xl tracking-[3px] pt-6'>Content Not Found</p>
                 <Button name='BACK' onClick={() => navigate(routeName.portfolio)} className='mt-6' />
               </div>
-            )}
+            )} */}
           </div>
         </div>
       </div>

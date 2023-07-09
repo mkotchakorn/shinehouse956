@@ -35,7 +35,7 @@ export default function Navbar() {
                 return (
                   <Link key={r.name} to={r.path} className='cursor-pointer'>
                     <div
-                      className={`tablet:ml-4 px-1 py-[2px] text-[13px] rounded-full border-2 border-primary uppercase text-sm w-[104px] text-center cursor-pointer transition-colors duration-200 font-semibold hover:bg-secondary hover:border-secondary hover:text-white`}
+                      className={`tablet:ml-4 px-1 py-[2px] text-[13px] rounded-full border-2 border-primary uppercase text-sm w-[104px] text-center cursor-pointer transition-colors duration-200 font-semibold hover:bg-primary hover:border-primary hover:text-white`}
                     >
                       {r.name}
                     </div>
