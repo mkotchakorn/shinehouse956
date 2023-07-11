@@ -1,163 +1,186 @@
-import project_1 from './images/portfolio_1.png';
-import project_2 from './images/portfolio_2.png';
-import project_3 from './images/portfolio_1.png';
-import project_4 from './images/portfolio_2.png';
-import project_5 from './images/portfolio_1.png';
-import project_6 from './images/portfolio_2.png';
-import project_7 from './images/portfolio_1.png';
-import project_8 from './images/portfolio_2.png';
-import project_9 from './images/portfolio_1.png';
-import project_10 from './images/portfolio_2.png';
-import project_11 from './images/portfolio_1.png';
-import project_12 from './images/portfolio_2.png';
-import project_13 from './images/portfolio_1.png';
-import project_14 from './images/portfolio_2.png';
-import project_15 from './images/portfolio_1.png';
-import project_16 from './images/portfolio_2.png';
-import project_17 from './images/portfolio_1.png';
-import project_18 from './images/portfolio_2.png';
-import project_19 from './images/portfolio_1.png';
-import project_20 from './images/portfolio_2.png';
+// exterior
+import { data as ex_content_1 } from './exterior/apartment-khun-jum/content';
+import { data as ex_content_2 } from './exterior/dr-nam-house/content';
+import { data as ex_content_3 } from './exterior/dr-tan-house/content';
+import { data as ex_content_4 } from './exterior/khun-krading-house/content';
+import { data as ex_content_5 } from './exterior/khun-lherm-pool-villa/content';
+import { data as ex_content_6 } from './exterior/khun-oat-apartment/content';
+import { data as ex_content_7 } from './exterior/khun-pradit-house/content';
+import { data as ex_content_8 } from './exterior/khun-satit-private-residence/content';
+import { data as ex_content_9 } from './exterior/ovo-salad/content';
+import { data as ex_content_10 } from './exterior/twins-house-chonburi/content';
+// interior
+import { data as in_content_1 } from './interior/boonlom-hotel/content';
+import { data as in_content_2 } from './interior/cp-house-type-a/content';
+import { data as in_content_3 } from './interior/cp-house-type-b/content';
+import { data as in_content_4 } from './interior/dr-plammy-clinic/content';
+import { data as in_content_5 } from './interior/khun-aey/content';
+import { data as in_content_6 } from './interior/khun-ai/content';
+import { data as in_content_7 } from './interior/khun-kratai-condo/content';
+import { data as in_content_8 } from './interior/khun-nun-housr/content';
+import { data as in_content_9 } from './interior/khun-q/content';
+import { data as in_content_10 } from './interior/lazy-panda/content';
+import { data as in_content_11 } from './interior/omakase-khun-win/content';
+import { data as in_content_12 } from './interior/panatnikom-chonburi/content';
+import { data as in_content_13 } from './interior/saipunya-house/content';
 
-export const portfolios = [
+export const portfoliosHome = [ex_content_3, ex_content_5, ex_content_8, ex_content_10, in_content_12, in_content_2, in_content_3, in_content_11];
+
+export const portfoliosAll = [
   {
-    image: project_1,
-    title: 'project 1',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: in_content_9.desc.project,
+    banner: in_content_9.banner,
+    type: in_content_9.type,
+    path: in_content_9.path,
   },
   {
-    image: project_2,
-    title: 'project 2',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: in_content_4.desc.project,
+    banner: in_content_4.banner,
+    type: in_content_4.type,
+    path: in_content_4.path,
   },
   {
-    image: project_3,
-    title: 'project 3',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: ex_content_2.desc.project,
+    banner: ex_content_2.banner,
+    type: ex_content_2.type,
+    path: ex_content_2.path,
   },
   {
-    image: project_4,
-    title: 'project 4',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: in_content_10.desc.project,
+    banner: in_content_10.banner,
+    type: in_content_10.type,
+    path: in_content_10.path,
   },
   {
-    image: project_5,
-    title: 'project 5',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: ex_content_4.desc.project,
+    banner: ex_content_4.banner,
+    type: ex_content_4.type,
+    path: ex_content_4.path,
   },
   {
-    image: project_6,
-    title: 'project 6',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: ex_content_1.desc.project,
+    banner: ex_content_1.banner,
+    type: ex_content_1.type,
+    path: ex_content_1.path,
   },
   {
-    image: project_7,
-    title: 'project 7',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: in_content_2.desc.project,
+    banner: in_content_2.banner,
+    type: in_content_2.type,
+    path: in_content_2.path,
   },
   {
-    image: project_8,
-    title: 'project 8',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: ex_content_7.desc.project,
+    banner: ex_content_7.banner,
+    type: ex_content_7.type,
+    path: ex_content_7.path,
   },
   {
-    image: project_9,
-    title: 'project 9',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: in_content_5.desc.project,
+    banner: in_content_5.banner,
+    type: in_content_5.type,
+    path: in_content_5.path,
   },
   {
-    image: project_10,
-    title: 'project 10',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: ex_content_3.desc.project,
+    banner: ex_content_3.banner,
+    type: ex_content_3.type,
+    path: ex_content_3.path,
   },
   {
-    image: project_11,
-    title: 'project 11',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: in_content_3.desc.project,
+    banner: in_content_3.banner,
+    type: in_content_3.type,
+    path: in_content_3.path,
   },
   {
-    image: project_12,
-    title: 'project 12',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: ex_content_9.desc.project,
+    banner: ex_content_9.banner,
+    type: ex_content_9.type,
+    path: ex_content_9.path,
   },
   {
-    image: project_13,
-    title: 'project 13',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: in_content_1.desc.project,
+    banner: in_content_1.banner,
+    type: in_content_1.type,
+    path: in_content_1.path,
   },
   {
-    image: project_14,
-    title: 'project 14',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: in_content_11.desc.project,
+    banner: in_content_11.banner,
+    type: in_content_11.type,
+    path: in_content_11.path,
   },
   {
-    image: project_15,
-    title: 'project 15',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: ex_content_10.desc.project,
+    banner: ex_content_10.banner,
+    type: ex_content_10.type,
+    path: ex_content_10.path,
   },
   {
-    image: project_16,
-    title: 'project 16',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: in_content_8.desc.project,
+    banner: in_content_8.banner,
+    type: in_content_8.type,
+    path: in_content_8.path,
   },
   {
-    image: project_17,
-    title: 'project 17',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: in_content_12.desc.project,
+    banner: in_content_12.banner,
+    type: in_content_12.type,
+    path: in_content_12.path,
   },
   {
-    image: project_18,
-    title: 'project 18',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: ex_content_8.desc.project,
+    banner: ex_content_8.banner,
+    type: ex_content_8.type,
+    path: ex_content_8.path,
   },
   {
-    image: project_19,
-    title: 'project 19',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: in_content_7.desc.project,
+    banner: in_content_7.banner,
+    type: in_content_7.type,
+    path: in_content_7.path,
   },
   {
-    image: project_20,
-    title: 'project 20',
-    desc: `Dolore nulla consectetur ut aliqua ut sit anim enim. Occaecat quis adipisicing ullamco duis. Veniam dolore excepteur non est in reprehenderit eu et Lorem irure in ad cillum. Incididunt duis tempor cillum occaecat reprehenderit velit. Qui ex aliqua nisi do irure adipisicing dolore elit labore ut anim amet.\n
-        In mollit nulla adipisicing veniam in minim elit aute non labore pariatur quis. Velit nisi ipsum aliqua magna tempor ut minim ipsum voluptate nisi. Qui mollit cupidatat nostrud Lorem esse culpa aliquip. Officia labore anim sint officia mollit exercitation ut amet ea voluptate.\n
-        Cupidatat sit amet consectetur nisi pariatur quis ad aute est sint deserunt quis incididunt exercitation. Officia exercitation est dolor elit sit eu ut fugiat ex aute. Mollit incididunt tempor nisi deserunt incididunt enim. Eu irure irure duis duis qui id exercitation eu. Ex in commodo laborum incididunt excepteur aliqua dolore minim aliqua culpa Lorem.`,
+    project: ex_content_6.desc.project,
+    banner: ex_content_6.banner,
+    type: ex_content_6.type,
+    path: ex_content_6.path,
   },
+  {
+    project: in_content_6.desc.project,
+    banner: in_content_6.banner,
+    type: in_content_6.type,
+    path: in_content_6.path,
+  },
+  {
+    project: in_content_13.desc.project,
+    banner: in_content_13.banner,
+    type: in_content_13.type,
+    path: in_content_13.path,
+  },
+  {
+    project: ex_content_5.desc.project,
+    banner: ex_content_5.banner,
+    type: ex_content_5.type,
+    path: ex_content_5.path,
+  },
+];
+
+export const exterior = [ex_content_1, ex_content_2, ex_content_3, ex_content_4, ex_content_5, ex_content_6, ex_content_7, ex_content_8, ex_content_9, ex_content_10];
+
+export const interior = [
+  in_content_1,
+  in_content_2,
+  in_content_3,
+  in_content_4,
+  in_content_5,
+  in_content_6,
+  in_content_7,
+  in_content_8,
+  in_content_9,
+  in_content_10,
+  in_content_11,
+  in_content_12,
+  in_content_13,
 ];

@@ -4,17 +4,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#615546',
-        secondary: '#A46833',
-        primary_action: '#BB6E2A',
+        primary: '#8294B2',
+        primary_action: '#8298BD',
         background: '#E9E9E9',
-        line: '#4CC764'
+        line: '#4CC764',
       },
       fontSize: {
         xxs: ['10px', '0.75rem'],
       },
       height: {
-        navbar: '75px'
+        navbar: '75px',
       },
       screens: {
         tablet: '920px',

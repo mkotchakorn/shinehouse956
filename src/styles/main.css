@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('./navbar.css');
 @import url('./banner.css');
 @import url('./portfolio.css');
 @import url('./contact.css');
+@import url('./radio.css');
+@import url('./slick.css');
 
 .content-wrap {
   @apply flex flex-col overflow-hidden h-screen;
@@ -25,5 +28,5 @@
 }
 
 .card {
-  @apply mt-6 p-4 xl:py-8 xl:px-14 bg-background/50 rounded-3xl xl:rounded-[38px];
+  @apply mt-6 p-4 xl:py-8 xl:px-14 bg-background/80 rounded-3xl xl:rounded-[38px];
 }

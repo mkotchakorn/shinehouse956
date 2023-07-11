@@ -11,7 +11,7 @@ export default function Process() {
     <AppLayout>
       <div className='container'>
         <div className='pt-10'>
-          <SectionProcess canGotoContact />
+          <SectionProcess />
         </div>
       </div>
     </AppLayout>

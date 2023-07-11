@@ -20,6 +20,7 @@ const initialErrorForm = {
   email: '',
   emailValidation: '',
   phone: '',
+  phoneValidation: '',
 };
 
 export default function SectionContact() {
@@ -39,6 +40,8 @@ export default function SectionContact() {
     }
     if (name === 'phone') {
       value = value.replace(/[^0-9.]/g, '');
+      const characterLength = value.length;
+      setError({ ...error, phoneValidation: characterLength && characterLength < 9 ? 'Invalid phone format.' : '' });
     }
     setGetInTouchForm({ ...getInTouchForm, [name]: value });
   };
@@ -86,17 +89,17 @@ export default function SectionContact() {
       <div className='w-full md:w-1/2 card md:py-8'>
         <p className='text-center font-semibold header tracking-[3px]'>CONTACT US</p>
         <div className='pt-6'>
-          <p className='text-secondary font-semibold text-base'>ADDRESS</p>
+          <p className='text-primary font-semibold text-base'>ADDRESS</p>
           <p className='whitespace-pre-wrap font-medium pt-3'>{contact.address}</p>
         </div>
         <div className='sm:flex justify-between'>
           <div>
             <div className='pt-6'>
-              <p className='text-secondary font-semibold text-base'>CALL US</p>
+              <p className='text-primary font-semibold text-base'>CALL US</p>
               <div className='whitespace-pre-wrap font-medium pt-2'>
                 {_.map(contact.call, (call, idx) => {
                   return (
-                    <a key={call} href={`tel:${call}`} className='hover:text-secondary transition-all duration-300'>
+                    <a key={call} href={`tel:${call}`} className='hover:text-primary transition-all duration-300'>
                       {call}
                       {idx + 1 < contact.call.length && <span className='pr-1 !text-black'>,</span>}
                     </a>
@@ -105,14 +108,14 @@ export default function SectionContact() {
               </div>
             </div>
             <div className='pt-6'>
-              <p className='text-secondary font-semibold text-base'>GET IN TOUCH</p>
+              <p className='text-primary font-semibold text-base'>GET IN TOUCH</p>
               <div className='flex items-center mt-2'>
                 {_.map(contact.get_in_touch, (social) => {
                   return (
                     <button
                       key={social.name}
                       onClick={() => window.open(social.path, '_blank', 'noreferrer')}
-                      className='mr-3 w-8 h-8 !outline-none !shadow-none !bg-transparent cursor-pointer hover:text-secondary transition-all duration-300'
+                      className='mr-3 w-8 h-8 !outline-none !shadow-none !bg-transparent cursor-pointer hover:text-primary transition-all duration-300'
                     >
                       {social.icon}
                     </button>
@@ -126,7 +129,7 @@ export default function SectionContact() {
           </div>
         </div>
       </div>
-      <div className={`flex flex-col w-full md:w-1/2 card bg-black/50 md:pt-8 md:pb-5 xl:px-10 ${isSending || isSendSuccess ? 'pointer-events-none' : ''}`}>
+      <div className={`flex flex-col w-full md:w-1/2 card bg-black/70 md:pt-8 md:pb-5 xl:px-10 ${isSending || isSendSuccess ? 'pointer-events-none' : ''}`}>
         <div>
           <p className='text-white font-medium text-base pb-2'>FULL NAME</p>
           <Input name='full_name' onChange={handleChange} value={getInTouchForm.full_name} error={error.full_name} />
@@ -138,7 +141,7 @@ export default function SectionContact() {
           </div>
           <div className='w-full pt-4 sm:pl-2'>
             <p className='text-white font-medium text-base pb-2'>PHONE</p>
-            <Input name='phone' onChange={handleChange} value={getInTouchForm.phone} error={error.phone} />
+            <Input name='phone' onChange={handleChange} value={getInTouchForm.phone} error={error.phoneValidation || error.phone} />
           </div>
         </div>
         <div className='pt-4'>

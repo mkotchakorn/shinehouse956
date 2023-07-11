@@ -1,0 +1,66 @@
+.slick-slider .slick-arrow {
+  @apply !hidden w-7 h-7;
+}
+
+.slick-slider .slick-arrow::before {
+  font-family: 'Material Icons';
+  font-size: 28px;
+}
+
+.slick-slider .slick-arrow.slick-prev::before {
+  content: '\e5e0';
+}
+
+.slick-slider .slick-arrow.slick-next::before {
+  content: '\e5e1';
+}
+
+.slick-slider .slick-dots {
+  @apply relative -bottom-4;
+}
+
+/* process */
+.slick-slider.process-banner .slick-arrow {
+  @apply z-10 !block;
+}
+
+.slick-slider.process-banner .slick-arrow.slick-prev {
+  @apply left-0 md:left-3;
+}
+
+.slick-slider.process-banner .slick-arrow.slick-next {
+  @apply right-0 md:right-3;
+}
+
+.slick-slider.process-banner .slick-dots {
+  @apply bottom-8;
+}
+
+.slick-slider.process-banner .slick-dots li button::before {
+  @apply text-[10px] md:text-[12px] opacity-100;
+}
+
+.slick-slider.process-banner .slick-dots li:not(.slick-active) button::before {
+  @apply text-background/70;
+}
+
+@screen xl {
+  .slick-slider .slick-arrow {
+    @apply !block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .slick-slider .slick-dots {
+    @apply mt-2 bottom-0;
+  }
+
+  .slick-slider .slick-dots li {
+    @apply mx-0;
+  }
+
+  /* process */
+  .slick-slider.process-banner .slick-arrow::before {
+    font-size: 16px;
+  }
+}
