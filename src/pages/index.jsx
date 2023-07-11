@@ -2,10 +2,9 @@ import { useEffect } from 'react';
 import AppLayout from '../component/AppLayout';
 import Banner from '../component/Banner';
 import SectionAbout from '../component/section/About';
-import SectionPortfolio from '../component/section/Portfolio';
 import SectionProcess from '../component/section/Process';
 import SectionContact from '../component/section/Contact';
-import { portfoliosHome } from '../assets/data/portfolio/portfolio';
+import PortfolioPreview from './portfolio/portfolioPreview';
 
 export default function Home() {
   useEffect(() => {
@@ -17,7 +16,7 @@ export default function Home() {
       <Banner />
       <div className='container'>
         <SectionAbout />
-        <SectionPortfolio data={portfoliosHome} canSeeMore />
+        <PortfolioPreview />
         <SectionProcess />
         <SectionContact />
       </div>

@@ -33,16 +33,16 @@ export default function Navbar() {
             <div className={`${isExpanded ? 'isExpanded' : ''} nav-menu flex items-center`}>
               {_.filter(router, (route) => route.show).map((r) => {
                 return (
-                  <Link key={r.name} to={r.path} className='cursor-pointer'>
+                  <Link key={r.name} to={r.path} className='cursor-pointer pt-3'>
                     <div
-                      className={`tablet:ml-4 px-1 py-[2px] text-[13px] rounded-full border-2 border-primary uppercase text-sm w-[104px] text-center cursor-pointer transition-colors duration-200 font-semibold hover:bg-primary hover:border-primary hover:text-white`}
+                      className={`tablet:ml-4 px-1 py-[2px] text-[13px] rounded-full uppercase text-sm w-[104px] text-center cursor-pointer transition-colors duration-200 font-semibold hover:text-primary`}
                     >
                       {r.name}
                     </div>
                   </Link>
                 );
               })}
-              <div onClick={() => setIsExpanded((exp) => !exp)} className='rounded-full border-2 border-primary !mt-8 w-8 h-8 flex items-center justify-center tablet:hidden'>
+              <div onClick={() => setIsExpanded((exp) => !exp)} className='rounded-full !mt-8 w-8 h-8 flex items-center justify-center tablet:hidden'>
                 <FontAwesomeIcon icon={faXMark} />
               </div>
             </div>

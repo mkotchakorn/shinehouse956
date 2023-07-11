@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 @import url('./navbar.css');
 @import url('./banner.css');
 @import url('./portfolio.css');
 @import url('./contact.css');
+@import url('./radio.css');
+@import url('./slick.css');
 
 .content-wrap {
   @apply flex flex-col overflow-hidden h-screen;
