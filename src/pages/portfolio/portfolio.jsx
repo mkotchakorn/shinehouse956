@@ -74,7 +74,7 @@ export default function Portfolio() {
                           <img src={'http://via.placeholder.com/640x360'} alt={portfolio.project} title={portfolio.type} />
                         </div>
                       </div>
-                      {portfolio.type}
+                      {/* {portfolio.type} */}
                       <p className='font-semibold uppercase tracking-[2px] text-center truncate max-w-[90%] mx-auto pt-[2px]'>{portfolio.project || 'SHINE HOUSE'}</p>
                     </div>
                   </div>
