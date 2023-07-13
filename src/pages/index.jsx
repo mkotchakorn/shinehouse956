@@ -13,7 +13,7 @@ export default function Home() {
 
   return (
     <AppLayout noFooter>
-      <Banner />
+      {/* <Banner /> */}
       <div className='container'>
         <SectionAbout />
         <PortfolioPreview />
