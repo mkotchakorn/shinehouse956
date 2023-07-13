@@ -2,6 +2,7 @@ import image_1 from './IMG_7142.JPG';
 import image_2 from './IMG_7143.JPG';
 import image_3 from './IMG_7144.JPG';
 import image_4 from './IMG_7146.JPG';
+import banner from './banner-IMG_7144.JPG';
 
 export const data = {
   path: '9',
@@ -16,6 +17,5 @@ export const data = {
     siteArea: '370 sq.m',
     facilities: [],
   },
-  banner: image_3,
-  banner2: image_2,
+  banner: banner,
 };

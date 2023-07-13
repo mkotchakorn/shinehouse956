@@ -6,6 +6,7 @@ import image_5 from './20220213_pnaam_perspective01.jpg';
 import image_6 from './20220213_pnaam_perspective02.jpg';
 import image_7 from './20220213_pnaam_perspective03.jpg';
 import image_8 from './20220213_pnaam_perspective04.jpg';
+import banner from './banner-20220213_pnaam_perspective02.jpg';
 
 export const data = {
   path: '2',
@@ -20,6 +21,5 @@ export const data = {
     siteArea: '270 sq.m',
     facilities: [],
   },
-  banner: image_6,
-  banner2: image_5,
+  banner: banner,
 };

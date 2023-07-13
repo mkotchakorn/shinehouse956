@@ -6,13 +6,14 @@ import image_5 from './342971204_1213822799268406_2159505315483952391_n.jpg';
 import image_6 from './343142264_903147827583573_2051233635814815606_n.jpg';
 import image_7 from './4.jpg';
 import image_8 from './5.jpg';
+import banner from './banner-2.jpg';
 
 export const data = {
   path: '9',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8],
   desc: {
-    project: '',
+    project: 'Khun.Q',
     owner: '',
     location: '',
     architect: '',
@@ -20,6 +21,5 @@ export const data = {
     siteArea: '',
     facilities: [],
   },
-  banner: image_2,
-  banner2: image_8,
+  banner: banner,
 };

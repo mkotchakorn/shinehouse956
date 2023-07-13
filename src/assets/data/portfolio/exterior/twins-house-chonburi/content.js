@@ -10,6 +10,7 @@ import image_9 from './751318132F124B48C5F2116BAAE5B689D9972D2C.jpeg';
 import image_10 from './C834CE5BA8EAFA1E4022255A87AC8177F9D5F51B.jpeg';
 import image_11 from './หน้าปก 1.jpg';
 import image_12 from './หน้าปก 2.jpg';
+import banner from './banner-6.jpg';
 
 export const data = {
   path: '10',
@@ -24,6 +25,5 @@ export const data = {
     siteArea: '340 ตารางเมตร',
     facilities: [],
   },
-  banner: image_5,
-  banner2: image_7,
+  banner: banner,
 };

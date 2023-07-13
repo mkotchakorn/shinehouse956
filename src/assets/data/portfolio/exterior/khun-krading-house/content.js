@@ -10,6 +10,7 @@ import image_9 from './277078240_132331356013810_4950663636958999926_n.jpg';
 import image_10 from './277079184_132331286013817_3655603888177298159_n.jpg';
 import image_11 from './277094277_132331256013820_7744292080137073684_n.jpg';
 import image_12 from './277095559_132331206013825_499684429584797222_n.jpg';
+import banner from './banner-277095559_132331206013825_499684429584797222_n.jpg';
 
 export const data = {
   path: '4',
@@ -24,6 +25,5 @@ export const data = {
     siteArea: '312 sq.m',
     facilities: [],
   },
-  banner: image_12,
-  banner2: image_8,
+  banner: banner,
 };

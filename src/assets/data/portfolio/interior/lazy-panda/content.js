@@ -13,13 +13,14 @@ import image_12 from './IMG_5488.JPG';
 import image_13 from './IMG_5490.JPG';
 import image_14 from './IMG_5492.JPG';
 import image_15 from './IMG_9619.JPG';
+import banner from './banner-IMG_9718.jpg';
 
 export const data = {
   path: '10',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8, image_9, image_10, image_11, image_12, image_13, image_14, image_15],
   desc: {
-    project: '',
+    project: 'Lazy panda',
     owner: '',
     location: '',
     architect: '',
@@ -27,6 +28,5 @@ export const data = {
     siteArea: '',
     facilities: [],
   },
-  banner: image_4,
-  banner2: image_8,
+  banner: banner,
 };

@@ -70,8 +70,8 @@ export default function Portfolio() {
                     <div onClick={() => navigate(`${routeName.portfolio}/${portfolio.type}/${portfolio.path}`)} className='card-thumbnail cursor-pointer'>
                       <div className='overflow-hidden'>
                         <div className='thumbnail'>
-                          {/* <img src={portfolio.banner} alt={portfolio.project} title={portfolio.type} /> */}
-                          <img src={'http://via.placeholder.com/640x360'} alt={portfolio.project} title={portfolio.type} />
+                          <img src={portfolio.banner} alt={portfolio.project} title={portfolio.type} />
+                          {/* <img src={'http://via.placeholder.com/640x360'} alt={portfolio.project} title={portfolio.type} /> */}
                         </div>
                       </div>
                       {/* {portfolio.type} */}

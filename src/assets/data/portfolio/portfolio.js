@@ -17,7 +17,7 @@ import { data as in_content_4 } from './interior/dr-plammy-clinic/content';
 import { data as in_content_5 } from './interior/khun-aey/content';
 import { data as in_content_6 } from './interior/khun-ai/content';
 import { data as in_content_7 } from './interior/khun-kratai-condo/content';
-import { data as in_content_8 } from './interior/khun-nun-housr/content';
+import { data as in_content_8 } from './interior/khun-nun-house/content';
 import { data as in_content_9 } from './interior/khun-q/content';
 import { data as in_content_10 } from './interior/lazy-panda/content';
 import { data as in_content_11 } from './interior/omakase-khun-win/content';

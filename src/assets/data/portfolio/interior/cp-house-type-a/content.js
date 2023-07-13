@@ -8,13 +8,14 @@ import image_7 from './777.jpg';
 import image_8 from './888.jpg';
 import image_9 from './999.jpg';
 import image_10 from './1010.jpg';
+import banner from './banner-222.jpg';
 
 export const data = {
   path: '2',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8, image_9, image_10],
   desc: {
-    project: '',
+    project: 'CP-HOUSE TYPE A',
     owner: '',
     location: '',
     architect: '',
@@ -22,6 +23,5 @@ export const data = {
     siteArea: '',
     facilities: [],
   },
-  banner: image_2,
-  banner2: image_9,
+  banner: banner,
 };

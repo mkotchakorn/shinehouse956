@@ -7,13 +7,14 @@ import image_6 from './06.jpg';
 import image_7 from './07.jpg';
 import image_8 from './08.jpg';
 import image_9 from './09.jpg';
+import banner from './banner-04.jpg';
 
 export const data = {
   path: '1',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8, image_9],
   desc: {
-    project: '',
+    project: 'Boonlom Hotel',
     owner: '',
     location: '',
     architect: '',
@@ -21,6 +22,5 @@ export const data = {
     siteArea: '',
     facilities: [],
   },
-  banner: image_9,
-  banner2: image_4,
+  banner: banner,
 };
