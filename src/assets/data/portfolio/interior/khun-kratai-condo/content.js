@@ -1,11 +1,11 @@
-import image_1 from './IMG_7576.JPG';
-import image_2 from './IMG_7577.JPG';
-import image_3 from './IMG_7578.JPG';
-import image_4 from './IMG_7579.JPG';
-import image_5 from './IMG_7580.JPG';
-import image_6 from './IMG_7581.JPG';
-import image_7 from './IMG_7582.JPG';
-import banner from './IMG_7582.JPG';
+import image_1 from './IMG_7576.jpg';
+import image_2 from './IMG_7577.jpg';
+import image_3 from './IMG_7578.jpg';
+import image_4 from './IMG_7579.jpg';
+import image_5 from './IMG_7580.jpg';
+import image_6 from './IMG_7581.jpg';
+import image_7 from './IMG_7582.jpg';
+import banner from './banner-IMG_7582.jpg';
 
 export const data = {
   path: '7',
@@ -21,4 +21,5 @@ export const data = {
     facilities: [],
   },
   banner: banner,
+  preview: image_7,
 };

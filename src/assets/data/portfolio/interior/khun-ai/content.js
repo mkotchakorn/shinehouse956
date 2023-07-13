@@ -1,19 +1,19 @@
-import image_1 from './IMG_1832.JPG';
-import image_2 from './IMG_1833.JPG';
-import image_3 from './IMG_1834.JPG';
-import image_4 from './IMG_1835.JPG';
-import image_5 from './IMG_1836.JPG';
-import image_6 from './IMG_1837.JPG';
-import image_7 from './IMG_1841.JPG';
-import image_8 from './IMG_1842.JPG';
-import image_9 from './IMG_1843.JPG';
-import image_10 from './IMG_5182.JPG';
-import image_11 from './IMG_5183.JPG';
-import image_12 from './IMG_5185.JPG';
-import image_13 from './IMG_5186.JPG';
-import image_14 from './IMG_5187.JPG';
-import image_15 from './IMG_5188.JPG';
-import banner from './banner-IMG_5183.JPG';
+import image_1 from './IMG_1832-min.jpg';
+import image_2 from './IMG_1833-min.jpg';
+import image_3 from './IMG_1834-min.jpg';
+import image_4 from './IMG_1835-min.jpg';
+import image_5 from './IMG_1836-min.jpg';
+import image_6 from './IMG_1837-min.jpg';
+import image_7 from './IMG_1841-min.jpg';
+import image_8 from './IMG_1842-min.jpg';
+import image_9 from './IMG_1843-min.jpg';
+import image_10 from './IMG_5182-min.jpg';
+import image_11 from './IMG_5183-min.jpg';
+import image_12 from './IMG_5185-min.jpg';
+import image_13 from './IMG_5186-min.jpg';
+import image_14 from './IMG_5187-min.jpg';
+import image_15 from './IMG_5188-min.jpg';
+import banner from './banner-IMG_1835.jpg';
 
 export const data = {
   path: '6',
@@ -29,4 +29,5 @@ export const data = {
     facilities: [],
   },
   banner: banner,
+  preview: image_11,
 };

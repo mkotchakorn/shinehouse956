@@ -19,4 +19,5 @@ export const data = {
     facilities: ['4 Bedroom.', '4 Powders room.', '1 Living Room.', '1 Dining Room.', '1 Kitchen Room.'],
   },
   banner: banner,
+  preview: image_1,
 };

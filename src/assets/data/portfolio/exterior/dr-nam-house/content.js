@@ -22,4 +22,5 @@ export const data = {
     facilities: [],
   },
   banner: banner,
+  preview: image_6,
 };

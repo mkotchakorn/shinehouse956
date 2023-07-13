@@ -6,13 +6,13 @@ import process_5 from './process_5.png';
 import process_6 from './process_6.png';
 
 // banner
-import process_banner_1 from './precess-banner/IMG_1841.JPG';
-import process_banner_2 from './precess-banner/IMG_1842.JPG';
-import process_banner_3 from './precess-banner/IMG_1843.JPG';
-import process_banner_4 from './precess-banner/IMG_1844.JPG';
-import process_banner_5 from './precess-banner/IMG_1845.JPG';
-import process_banner_6 from './precess-banner/IMG_1846.JPG';
-import process_banner_7 from './precess-banner/IMG_1847.JPG';
+import process_banner_1 from './precess-banner/IMG_1841.jpg';
+import process_banner_2 from './precess-banner/IMG_1842.jpg';
+import process_banner_3 from './precess-banner/IMG_1843.jpg';
+import process_banner_4 from './precess-banner/IMG_1844.jpg';
+import process_banner_5 from './precess-banner/IMG_1845.jpg';
+import process_banner_6 from './precess-banner/IMG_1846.jpg';
+import process_banner_7 from './precess-banner/IMG_1847.jpg';
 
 export const process = [
   {

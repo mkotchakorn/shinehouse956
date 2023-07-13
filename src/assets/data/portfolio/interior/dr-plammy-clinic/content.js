@@ -1,7 +1,7 @@
-import image_1 from './3.jpg';
-import image_2 from './4.jpg';
-import image_3 from './5.jpg';
-import image_4 from './8.jpg';
+import image_1 from './3-min.jpg';
+import image_2 from './4-min.jpg';
+import image_3 from './5-min.jpg';
+import image_4 from './8-min.jpg';
 import banner from './banner-4.jpg';
 
 export const data = {
@@ -18,4 +18,5 @@ export const data = {
     facilities: [],
   },
   banner: banner,
+  preview: image_2,
 };

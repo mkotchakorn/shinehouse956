@@ -15,7 +15,7 @@ const settings = {
   autoplay: true,
   autoplaySpeed: 3000,
   pauseOnHover: false,
-  className: 'bg-black',
+  className: 'bg-transparent',
 };
 
 export default function Banner() {
