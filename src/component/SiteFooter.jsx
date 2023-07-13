@@ -30,16 +30,14 @@ export default function SiteFooter() {
   }, []);
 
   const line = _.find(contact.get_in_touch, { name: 'line' });
-  const blog = 'site-menu-blog bg-white h-11 w-11 sm:h-12 sm:w-12 rounded-full flex items-center justify-center my-2 cursor-pointer';
+  const blog = 'site-menu-blog bg-white h-10 w-10 rounded-full flex items-center justify-center my-2 cursor-pointer';
 
   return (
-    <div className='fixed right-4 bottom-4'>
+    <div className='fixed right-6 bottom-4 z-20'>
       <div className='flex flex-col'>
-        <div id='facebook-message' className={`${blog}`}>
-          <div onClick={() => null} className='w-6 h-6 fill-black'>
-            <div id='fb-root'></div>
-            <div ref={MessengerRef} id='fb-customer-chat' className='fb-customerchat'></div>
-          </div>
+        <div id='facebook-message'>
+          <div id='fb-root'></div>
+          <div ref={MessengerRef} id='fb-customer-chat' className='fb-customerchat'></div>
         </div>
         <div id='line' className={`${blog}`}>
           <div onClick={() => window.open(line.path, '_blank', 'noreferrer')} className='w-6 h-6 text-black'>
