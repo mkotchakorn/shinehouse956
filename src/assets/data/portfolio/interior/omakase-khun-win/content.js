@@ -55,5 +55,5 @@ export const data = {
     facilities: [],
   },
   banner: banner,
-preview: image_20,
+  preview: image_20,
 };
