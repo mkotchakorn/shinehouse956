@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import _ from 'lodash';
-// import emailjs from '@emailjs/browser';
+import emailjs from '@emailjs/browser';
 import Input from '../common/Input';
 import Textarea from '../common/Textarea';
 import Button from '../common/Button';
 import Spinner from '../common/Spinner';
 import { contact } from '../../assets/data/contact/contact';
-// import { emailJsConfig } from '../../constants/config';
+import { emailJsConfig } from '../../constants/config';
 
 const initialForm = {
   full_name: '',
@@ -57,31 +57,23 @@ export default function SectionContact() {
     }
 
     setIsSending(true);
-    setTimeout(() => {
-      setIsSending(false);
-      setIsSendSuccess('Your message has been sent successfully.');
-    }, SENDING_TIME_OUT);
-    setTimeout(() => {
-      setIsSendSuccess('');
-      setGetInTouchForm(initialForm);
-    }, SENDING_TIME_OUT + 3000);
-    // emailjs.send(emailJsConfig.service_id, emailJsConfig.template_id, getInTouchForm, emailJsConfig.public_key).then(
-    //   () => {
-    //     setTimeout(() => {
-    //       setIsSending(false);
-    //       setIsSendSuccess('Your message has been sent successfully.');
-    //     }, SENDING_TIME_OUT);
-    //     setTimeout(() => {
-    //       setIsSendSuccess('');
-    //       setGetInTouchForm(initialForm);
-    //     }, SENDING_TIME_OUT + 3000);
-    //   },
-    //   (error) => {
-    //     setTimeout(() => {
-    //       setIsSending(false);
-    //     }, SENDING_TIME_OUT);
-    //   }
-    // );
+    emailjs.send(emailJsConfig.service_id, emailJsConfig.template_id, getInTouchForm, emailJsConfig.public_key).then(
+      () => {
+        setTimeout(() => {
+          setIsSending(false);
+          setIsSendSuccess('Your message has been sent successfully.');
+        }, SENDING_TIME_OUT);
+        setTimeout(() => {
+          setIsSendSuccess('');
+          setGetInTouchForm(initialForm);
+        }, SENDING_TIME_OUT + 3000);
+      },
+      (error) => {
+        setTimeout(() => {
+          setIsSending(false);
+        }, SENDING_TIME_OUT);
+      }
+    );
   };
 
   return (

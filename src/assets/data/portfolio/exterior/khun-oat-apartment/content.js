@@ -8,6 +8,7 @@ import image_7 from './275381944_128393506407595_499510996462523301_n.jpg';
 import image_8 from './275388690_128393549740924_3847999309450285495_n.jpg';
 import image_9 from './Render1.jpg';
 import image_10 from './Render2.jpg';
+import banner from './banner-Render1.jpg';
 
 export const data = {
   path: '6',
@@ -22,6 +23,5 @@ export const data = {
     siteArea: '709 sq.m',
     facilities: [],
   },
-  banner: image_9,
-  banner2: image_7,
+  banner: banner,
 };

@@ -15,6 +15,7 @@ import image_14 from './Ex5.jpg';
 import image_15 from './Ex6.jpg';
 import image_16 from './Ex7.jpg';
 import image_17 from './Ex8.jpg';
+import banner from './banner-Ex1.jpg';
 
 export const data = {
   path: '5',
@@ -29,6 +30,5 @@ export const data = {
     siteArea: '181 sq.m',
     facilities: ['2 Bedroom', '1 Bathroom room', '1 Living Room', '1 Dining Room', '1 Kitchen Room '],
   },
-  banner: image_10,
-  banner2: image_4,
+  banner: banner,
 };

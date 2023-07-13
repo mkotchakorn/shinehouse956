@@ -18,6 +18,7 @@ import image_17 from './IMG_1393.JPG';
 import image_18 from './IMG_1394.JPG';
 import image_19 from './IMG_1395.JPG';
 import image_20 from './IMG_1397.JPG';
+import banner from './banner-IMG_1397.JPG';
 
 export const data = {
   path: '11',
@@ -45,7 +46,7 @@ export const data = {
     image_20,
   ],
   desc: {
-    project: '',
+    project: 'Omakase - Khun Win',
     owner: '',
     location: '',
     architect: '',
@@ -53,6 +54,5 @@ export const data = {
     siteArea: '',
     facilities: [],
   },
-  banner: image_20,
-  banner2: image_14,
+  banner: banner,
 };

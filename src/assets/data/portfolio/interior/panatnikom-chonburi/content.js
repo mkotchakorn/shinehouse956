@@ -32,6 +32,7 @@ import image_31 from './ห้องน้ำขั้น 1-1.jpg';
 import image_32 from './ห้องน้ำขั้น 1-2.jpg';
 import image_33 from './ห้องน้ำขั้น 2-1.jpg';
 import image_34 from './ห้องน้ำขั้น 2-2.jpg';
+import banner from './banner-01-01.jpg';
 
 export const data = {
   path: '12',
@@ -73,7 +74,7 @@ export const data = {
     image_34,
   ],
   desc: {
-    project: '',
+    project: 'Panatnikom - Chonburi',
     owner: '',
     location: '',
     architect: '',
@@ -81,6 +82,5 @@ export const data = {
     siteArea: '',
     facilities: [],
   },
-  banner: image_1,
-  banner2: image_18,
+  banner: banner,
 };

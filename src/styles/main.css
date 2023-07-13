@@ -20,7 +20,7 @@
 }
 
 .container {
-  @apply max-w-screen-lg mx-auto px-4 xl:px-8 !important;
+  @apply max-w-[1200px] mx-auto px-4 xl:px-8 !important;
 }
 
 .header {

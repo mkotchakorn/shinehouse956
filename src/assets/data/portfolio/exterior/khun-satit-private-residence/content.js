@@ -6,6 +6,7 @@ import image_5 from './5.jpg';
 import image_6 from './6.jpg';
 import image_7 from './7.jpg';
 import image_8 from './8.jpg';
+import banner from './banner-5.jpg';
 
 export const data = {
   path: '8',
@@ -20,6 +21,5 @@ export const data = {
     siteArea: '650 sq.m',
     facilities: ['5 Bedroom', '4 Powders room', '1 Living Room', '1 Fitness', '1 Entertainment Room', '1 Dining Room', '1 Kitchen Room', '1 Studio', 'Car Park', 'Swimming Pool'],
   },
-  banner: image_5,
-  banner2: image_7,
+  banner: banner,
 };
