@@ -14,7 +14,7 @@ import 'slick-carousel/slick/slick-theme.css';
 const settings = {
   dots: true,
   arrows: true,
-  infinite: true,
+  infinite: false,
   speed: 1000,
   slidesToShow: 3,
   slidesToScroll: 1,
@@ -28,6 +28,7 @@ const settings = {
       breakpoint: 640,
       settings: {
         slidesToShow: 1,
+        rows: 1,
       },
     },
   ],
@@ -68,68 +69,59 @@ export default function PortfolioId() {
           <div className='card'>
             {(portfolio && (
               <>
-                <div className='flex flex-col sm:flex-row'>
-                  {portfolio.desc.location && (
-                    <div className='w-full max-w-[250px] mx-auto'>
-                      <div className='relative pt-[133.33%]'>
-                        <img src={portfolio.banner2} alt={portfolio.desc.project} className='absolute inset-0 w-full h-full object-cover pointer-events-none' />
-                      </div>
+                <div>
+                  <div className='flex'>
+                    <div className={title_class}>Project:</div>
+                    <div className={body_class}>{portfolio.desc.project || 'SHINE HOUSE'}</div>
+                  </div>
+                  {portfolio.desc.owner && (
+                    <div className='flex'>
+                      <div className={title_class}>Owner:</div>
+                      <div className={body_class}>{portfolio.desc.owner}</div>
                     </div>
                   )}
-                  <div className={`flex-1 ${portfolio.desc.location ? 'sm:pl-4 xl:pl-8 pt-4 sm:pt-0' : ''}`}>
+                  {portfolio.desc.location && (
                     <div className='flex'>
-                      <div className={title_class}>Project:</div>
-                      <div className={body_class}>{portfolio.desc.project || 'SHINE HOUSE'}</div>
+                      <div className={title_class}>Location:</div>
+                      <div className={body_class}>{portfolio.desc.location}</div>
                     </div>
-                    {portfolio.desc.owner && (
-                      <div className='flex'>
-                        <div className={title_class}>Owner:</div>
-                        <div className={body_class}>{portfolio.desc.owner}</div>
-                      </div>
-                    )}
-                    {portfolio.desc.location && (
-                      <div className='flex'>
-                        <div className={title_class}>Location:</div>
-                        <div className={body_class}>{portfolio.desc.location}</div>
-                      </div>
-                    )}
-                    {portfolio.desc.architect && (
-                      <div className='flex'>
-                        <div className={title_class}>Architect:</div>
-                        <div className={body_class}>{portfolio.desc.architect}</div>
-                      </div>
-                    )}
-                    {portfolio.desc.budget && (
-                      <div className='flex'>
-                        <div className={title_class}>Budget:</div>
-                        <div className={body_class}>{portfolio.desc.budget}</div>
-                      </div>
-                    )}
-                    {portfolio.desc.siteArea && (
-                      <div className='flex'>
-                        <div className={title_class}>SiteArea:</div>
-                        <div className={body_class}>{portfolio.desc.siteArea}</div>
-                      </div>
-                    )}
-                    {_.size(portfolio.desc.facilities) > 0 && (
-                      <div className='block'>
-                        <div className={title_class}>Facilities:</div>
-                        {_.map(portfolio.desc.facilities, (facility) => {
-                          return (
-                            <div key={facility} className={body_class}>
-                              <span className='px-1 text-base leading-3 tablet:text-xl'>•</span> {facility}
-                            </div>
-                          );
-                        })}
-                      </div>
-                    )}
-                  </div>
+                  )}
+                  {portfolio.desc.architect && (
+                    <div className='flex'>
+                      <div className={title_class}>Architect:</div>
+                      <div className={body_class}>{portfolio.desc.architect}</div>
+                    </div>
+                  )}
+                  {portfolio.desc.budget && (
+                    <div className='flex'>
+                      <div className={title_class}>Budget:</div>
+                      <div className={body_class}>{portfolio.desc.budget}</div>
+                    </div>
+                  )}
+                  {portfolio.desc.siteArea && (
+                    <div className='flex'>
+                      <div className={title_class}>SiteArea:</div>
+                      <div className={body_class}>{portfolio.desc.siteArea}</div>
+                    </div>
+                  )}
+                  {_.size(portfolio.desc.facilities) > 0 && (
+                    <div className='block'>
+                      <div className={title_class}>Facilities:</div>
+                      {_.map(portfolio.desc.facilities, (facility) => {
+                        return (
+                          <div key={facility} className={body_class}>
+                            <span className='px-1 text-base leading-3 tablet:text-xl'>•</span> {facility}
+                          </div>
+                        );
+                      })}
+                    </div>
+                  )}
                 </div>
                 <div className='mt-4 sm:-mx-2'>
-                  <Slider {...settings}>
+                  <Slider {...settings} rows={_.size(portfolio.images) >= 6 ? 2 : 1}>
                     {_.map(portfolio.images, (img, idx) => {
                       return (
-                        <div key={idx} className='px-0 sm:px-2'>
+                        <div key={idx} className='px-0 sm:p-2'>
                           <div onClick={() => previewImage(idx)} className='relative pt-[75%] cursor-pointer'>
                             <img src={img} alt={idx} className='absolute inset-0 w-full h-full object-cover pointer-events-none' />
                           </div>
@@ -143,8 +135,8 @@ export default function PortfolioId() {
                 </div>
 
                 {isPreview && (
-                  <div onClick={() => setIsPreview(false)} className='fixed inset-0 bg-white/50 backdrop-blur z-10 p-4'>
-                    <img src={preview} alt='img-preview' onClick={(e) => e.stopPropagation()} className='md:max-w-[75%] w-auto h-full object-contain mx-auto' />
+                  <div onClick={() => setIsPreview(false)} className='fixed inset-0 bg-white/50 backdrop-blur z-10 p-4 flex items-center justify-center'>
+                    <img src={preview} alt='img-preview' onClick={(e) => e.stopPropagation()} className='md:max-w-[75%] w-auto h-auto object-contain mx-auto' />
                   </div>
                 )}
               </>
