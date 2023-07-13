@@ -10,7 +10,7 @@ import image_9 from './9.jpg';
 import image_10 from './10.jpg';
 import image_11 from './11.jpg';
 import image_12 from './12.jpg';
-import banner from './banner-2.jpg';
+import banner from './banner-3.jpg';
 
 export const data = {
   path: '3',
@@ -26,4 +26,5 @@ export const data = {
     facilities: [],
   },
   banner: banner,
+  preview: image_2,
 };

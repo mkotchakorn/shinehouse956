@@ -1,11 +1,11 @@
-import image_1 from './1.jpg';
-import image_2 from './2.jpg';
-import image_3 from './33.jpg';
-import image_4 from './55.jpg';
-import image_5 from './77.jpg';
-import image_6 from './Ex1.jpg';
-import image_7 from './Ex2.jpg';
-import image_8 from './Ex3.jpg';
+import image_1 from './1-min.jpg';
+import image_2 from './2-min.jpg';
+import image_3 from './33-min.jpg';
+import image_4 from './55-min.jpg';
+import image_5 from './77-min.jpg';
+import image_6 from './Ex1-min.jpg';
+import image_7 from './Ex2-min.jpg';
+import image_8 from './Ex3-min.jpg';
 import banner from './banner-Ex2.jpg';
 
 export const data = {
@@ -22,4 +22,5 @@ export const data = {
     facilities: ['2 Bedroom', '2 Powders room', '1 Living Room', '1 Dining Room', '1 Kitchen Room', 'Onzen'],
   },
   banner: banner,
+  preview: image_7,
 };

@@ -1,4 +1,4 @@
-import image_1 from './20220213_tummada_perspective02.jpg';
+import image_1 from './20220213_tummada_perspective01.jpg';
 import image_2 from './20220213_tummada_perspective02.jpg';
 import image_3 from './20220213_tummada_perspective03.jpg';
 import banner from './banner-20220213_tummada_perspective02.jpg';
@@ -17,4 +17,5 @@ export const data = {
     facilities: [],
   },
   banner: banner,
+  preview: image_2,
 };

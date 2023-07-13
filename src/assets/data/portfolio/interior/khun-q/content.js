@@ -1,11 +1,11 @@
-import image_1 from './1.jpg';
-import image_2 from './2.jpg';
-import image_3 from './3.jpg';
-import image_4 from './342618887_250756317317260_8427197637920273311_n.jpg';
-import image_5 from './342971204_1213822799268406_2159505315483952391_n.jpg';
-import image_6 from './343142264_903147827583573_2051233635814815606_n.jpg';
-import image_7 from './4.jpg';
-import image_8 from './5.jpg';
+import image_1 from './1-min.jpg';
+import image_2 from './2-min.jpg';
+import image_3 from './3-min.jpg';
+import image_4 from './342618887_250756317317260_8427197637920273311_n-min.jpg';
+import image_5 from './342971204_1213822799268406_2159505315483952391_n-min.jpg';
+import image_6 from './343142264_903147827583573_2051233635814815606_n-min.jpg';
+import image_7 from './4-min.jpg';
+import image_8 from './5-min.jpg';
 import banner from './banner-2.jpg';
 
 export const data = {
@@ -22,4 +22,5 @@ export const data = {
     facilities: [],
   },
   banner: banner,
+  preview: image_2,
 };
