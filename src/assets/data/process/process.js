@@ -6,13 +6,13 @@ import process_5 from './process_5.png';
 import process_6 from './process_6.png';
 
 // banner
-import process_banner_1 from './precess-banner/IMG_1841.jpg';
-import process_banner_2 from './precess-banner/IMG_1842.jpg';
-import process_banner_3 from './precess-banner/IMG_1843.jpg';
-import process_banner_4 from './precess-banner/IMG_1844.jpg';
-import process_banner_5 from './precess-banner/IMG_1845.jpg';
-import process_banner_6 from './precess-banner/IMG_1846.jpg';
-import process_banner_7 from './precess-banner/IMG_1847.jpg';
+// import process_banner_1 from './precess-banner/IMG_1841.jpg';
+// import process_banner_2 from './precess-banner/IMG_1842.jpg';
+// import process_banner_3 from './precess-banner/IMG_1843.jpg';
+// import process_banner_4 from './precess-banner/IMG_1844.jpg';
+// import process_banner_5 from './precess-banner/IMG_1845.jpg';
+// import process_banner_6 from './precess-banner/IMG_1846.jpg';
+// import process_banner_7 from './precess-banner/IMG_1847.jpg';
 
 export const process = [
   {
@@ -41,4 +41,5 @@ export const process = [
   },
 ];
 
-export const process_banner = [process_banner_1, process_banner_2, process_banner_3, process_banner_4, process_banner_5, process_banner_6, process_banner_7];
+// export const process_banner = [process_banner_2, process_banner_3, process_banner_4, process_banner_5, process_banner_6, process_banner_7];
+export const process_banner = [];
