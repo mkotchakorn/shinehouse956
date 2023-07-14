@@ -1,11 +1,11 @@
-import image_1 from './IMG_7576.jpg';
-import image_2 from './IMG_7577.jpg';
-import image_3 from './IMG_7578.jpg';
-import image_4 from './IMG_7579.jpg';
-import image_5 from './IMG_7580.jpg';
-import image_6 from './IMG_7581.jpg';
-import image_7 from './IMG_7582.jpg';
-import banner from './banner-IMG_7582.jpg';
+import image_1 from './IMG_756.jpg';
+import image_2 from './IMG_757.jpg';
+import image_3 from './IMG_758.jpg';
+import image_4 from './IMG_759.jpg';
+import image_5 from './IMG_760.jpg';
+import image_6 from './IMG_761.jpg';
+import image_7 from './IMG_762.jpg';
+import banner from './banner-kratai.jpg';
 
 export const data = {
   path: '7',
