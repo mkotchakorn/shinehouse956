@@ -7,7 +7,7 @@ export default function SiteFooter() {
 
   useEffect(() => {
     if (MessengerRef.current) {
-      MessengerRef.current.setAttribute('page_id', '102407155368190');
+      MessengerRef.current.setAttribute('page_id', '110958204607952');
       MessengerRef.current.setAttribute('attribution', 'biz_inbox');
     }
 

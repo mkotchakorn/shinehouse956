@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-import { useNavigate } from 'react-router-dom';
 import _ from 'lodash';
 import AppLayout from '../../component/AppLayout';
 import Button from '../../component/common/Button';
@@ -9,7 +8,6 @@ import { routeName } from '../../routes/routes';
 export default function Portfolio() {
   const DEFAULT_LENGTH = 16;
   const UP_TO_LENGTH = 8;
-  const navigate = useNavigate();
   const defaultAll = portfoliosAll;
   const defaultInterior = portfoliosAll.filter((p) => p.type === 'interior');
   const defaultExterior = portfoliosAll.filter((p) => p.type === 'exterior');
@@ -63,11 +61,11 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-            <div className='flex flex-wrap'>
+            <div className='flex flex-wrap -mx-2'>
               {_.map(portfolios, (portfolio, idx) => {
                 return (
-                  <div key={idx} className='py-2 w-1/2 sm:w-1/3 md:w-1/4'>
-                    <div onClick={() => navigate(`${routeName.portfolio}/${portfolio.type}/${portfolio.path}`)} className='card-thumbnail cursor-pointer'>
+                  <div key={idx} className='p-2 w-1/2 sm:w-1/3 md:w-1/4'>
+                    <div onClick={() => window.location.href = `${routeName.portfolio}/${portfolio.type}/${portfolio.path}`} className='card-thumbnail cursor-pointer'>
                       <div className='overflow-hidden'>
                         <div className='thumbnail'>
                           <img src={portfolio.preview} alt={portfolio.project} title={portfolio.type} />
