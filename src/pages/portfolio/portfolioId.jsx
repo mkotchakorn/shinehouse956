@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import Slider from 'react-slick';
 import _ from 'lodash';
 import AppLayout from '../../component/AppLayout';
@@ -27,6 +27,10 @@ const settings = {
     {
       breakpoint: 640,
       settings: {
+        dots: false,
+        centerMode: true,
+        infinite: true,
+        centerPadding: "60px",
         slidesToShow: 1,
         rows: 1,
       },
@@ -38,7 +42,6 @@ const title_class = 'font-medium sm:text-base';
 const body_class = 'sm:text-base pl-3';
 
 export default function PortfolioId() {
-  const navigate = useNavigate();
   const location = useLocation();
   const param = location.pathname.substring(1).split('/');
   const paramType = param[1];
@@ -60,7 +63,7 @@ export default function PortfolioId() {
   return (
     <AppLayout>
       {portfolio && (
-        <div className='relative pt-[42.85%]'>
+        <div className='relative pt-[42.85%] md:pt-[40%]'>
           <img src={portfolio.banner} alt={portfolio.desc.project} className='absolute inset-0 w-full h-full object-cover pointer-events-none' />
         </div>
       )}
@@ -121,7 +124,7 @@ export default function PortfolioId() {
                   <Slider {...settings} rows={_.size(portfolio.images) >= 6 ? 2 : 1}>
                     {_.map(portfolio.images, (img, idx) => {
                       return (
-                        <div key={idx} className='px-0 sm:p-2'>
+                        <div key={idx} className='px-2 sm:p-2'>
                           <div onClick={() => previewImage(idx)} className='relative pt-[75%] cursor-pointer'>
                             <img src={img} alt={idx} className='absolute inset-0 w-full h-full object-cover pointer-events-none' />
                           </div>
@@ -131,11 +134,11 @@ export default function PortfolioId() {
                   </Slider>
                 </div>
                 <div className='text-center'>
-                  <Button name='BACK TO PORTFOLIO' onClick={() => navigate(routeName.portfolio)} className='mt-4 sm:mt-10' />
+                  <Button name='BACK TO PORTFOLIO' onClick={() => window.location.href = routeName.portfolio} className='mt-4 sm:mt-10' />
                 </div>
 
                 {isPreview && (
-                  <div onClick={() => setIsPreview(false)} className='fixed inset-0 bg-white/50 backdrop-blur z-10 p-4 flex items-center justify-center'>
+                  <div onClick={() => setIsPreview(false)} className='fixed inset-0 bg-black/60 backdrop-blur z-30 p-4 flex items-center justify-center'>
                     <img src={preview} alt='img-preview' onClick={(e) => e.stopPropagation()} className='md:max-w-[75%] w-auto h-auto object-contain mx-auto' />
                   </div>
                 )}
@@ -144,7 +147,7 @@ export default function PortfolioId() {
               <div className='text-center'>
                 <FontAwesomeIcon icon={faCircleExclamation} className='text-7xl' />
                 <p className='font-semibold text-3xl tracking-[3px] pt-6'>Content Not Found</p>
-                <Button name='BACK TO PORTFOLIO' onClick={() => navigate(routeName.portfolio)} className='mt-6' />
+                <Button name='BACK TO PORTFOLIO' onClick={() => window.location.href = routeName.portfolio} className='mt-6' />
               </div>
             )}
           </div>

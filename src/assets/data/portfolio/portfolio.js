@@ -34,12 +34,6 @@ export const portfoliosAll = [
     path: in_content_9.path,
   },
   {
-    project: in_content_4.desc.project,
-    preview: in_content_4.preview,
-    type: in_content_4.type,
-    path: in_content_4.path,
-  },
-  {
     project: ex_content_2.desc.project,
     preview: ex_content_2.preview,
     type: ex_content_2.type,
@@ -100,12 +94,6 @@ export const portfoliosAll = [
     path: ex_content_9.path,
   },
   {
-    project: in_content_1.desc.project,
-    preview: in_content_1.preview,
-    type: in_content_1.type,
-    path: in_content_1.path,
-  },
-  {
     project: in_content_11.desc.project,
     preview: in_content_11.preview,
     type: in_content_11.type,
@@ -116,12 +104,6 @@ export const portfoliosAll = [
     preview: ex_content_10.preview,
     type: ex_content_10.type,
     path: ex_content_10.path,
-  },
-  {
-    project: in_content_8.desc.project,
-    preview: in_content_8.preview,
-    type: in_content_8.type,
-    path: in_content_8.path,
   },
   {
     project: in_content_12.desc.project,
@@ -164,6 +146,24 @@ export const portfoliosAll = [
     preview: ex_content_5.preview,
     type: ex_content_5.type,
     path: ex_content_5.path,
+  },
+  {
+    project: in_content_4.desc.project,
+    preview: in_content_4.preview,
+    type: in_content_4.type,
+    path: in_content_4.path,
+  },
+  {
+    project: in_content_1.desc.project,
+    preview: in_content_1.preview,
+    type: in_content_1.type,
+    path: in_content_1.path,
+  },
+  {
+    project: in_content_8.desc.project,
+    preview: in_content_8.preview,
+    type: in_content_8.type,
+    path: in_content_8.path,
   },
 ];
 

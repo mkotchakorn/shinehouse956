@@ -23,7 +23,7 @@ export default function Banner() {
     <Slider {...settings}>
       {_.map(banners, (b) => {
         return (
-          <div key={b.name} className='relative pt-[42.85%]'>
+          <div key={b.name} className='relative pt-[42.85%] md:pt-[40%]'>
             <img src={b.image} alt={b.name} className='absolute inset-0 w-full h-full object-cover pointer-events-none' />
           </div>
         );

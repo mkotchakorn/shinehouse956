@@ -1,13 +1,10 @@
 import React from 'react';
 import _ from 'lodash';
-import { useNavigate } from 'react-router-dom';
 import Button from '../common/Button';
 import { routeName } from '../../routes/routes';
 import { about } from '../../assets/data/about/about';
 
 export default function SectionAbout(props) {
-  const navigate = useNavigate();
-
   return (
     <div className='card'>
       <div className='flex flex-col sm:flex-row'>
@@ -27,7 +24,7 @@ export default function SectionAbout(props) {
           <p className='pt-5 whitespace-pre-wrap'>{about.paragraph_3}</p>
           <p className='pt-5 whitespace-pre-wrap'>{about.paragraph_4}</p>
 
-          <Button name='ติดต่อ SHINE HOUSE' onClick={() => (props.onContact ? props.onContact() : navigate(routeName.contact))} className='mt-5' />
+          <Button name='ติดต่อ SHINE HOUSE' onClick={() => (props.onContact ? props.onContact() : window.location.href = routeName.contact)} className='mt-5' />
         </div>
       </div>
     </div>
