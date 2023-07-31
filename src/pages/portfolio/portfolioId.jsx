@@ -10,6 +10,7 @@ import { routeName } from '../../routes/routes';
 import { interior, exterior } from '../../assets/data/portfolio/portfolio';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
+import PreviewImages from '../../component/PreviewImages';
 
 const settings = {
   dots: true,
@@ -30,7 +31,7 @@ const settings = {
         dots: false,
         centerMode: true,
         infinite: true,
-        centerPadding: "60px",
+        centerPadding: '60px',
         slidesToShow: 1,
         rows: 1,
       },
@@ -49,11 +50,11 @@ export default function PortfolioId() {
   const portfolio = paramType === 'interior' ? interior[paramIndex - 1] : exterior[paramIndex - 1];
 
   const [isPreview, setIsPreview] = useState(false);
-  const [preview, setPreview] = useState(null);
+  const [idxImage, setIdxImage] = useState(0);
 
   const previewImage = (idx) => {
     setIsPreview(true);
-    setPreview(portfolio.images[idx]);
+    setIdxImage(idx);
   };
 
   useEffect(() => {
@@ -134,20 +135,16 @@ export default function PortfolioId() {
                   </Slider>
                 </div>
                 <div className='text-center'>
-                  <Button name='BACK TO PORTFOLIO' onClick={() => window.location.href = routeName.portfolio} className='mt-4 sm:mt-10' />
+                  <Button name='BACK TO PORTFOLIO' onClick={() => (window.location.href = routeName.portfolio)} className='mt-4 sm:mt-10' />
                 </div>
 
-                {isPreview && (
-                  <div onClick={() => setIsPreview(false)} className='fixed inset-0 bg-black/60 backdrop-blur z-30 p-4 flex items-center justify-center'>
-                    <img src={preview} alt='img-preview' onClick={(e) => e.stopPropagation()} className='md:max-w-[75%] w-auto h-auto object-contain mx-auto' />
-                  </div>
-                )}
+                {isPreview && <PreviewImages images={portfolio.images} idxImage={idxImage} isPreview={isPreview} setIsPreview={(val) => setIsPreview(val)} />}
               </>
             )) || (
               <div className='text-center'>
                 <FontAwesomeIcon icon={faCircleExclamation} className='text-7xl' />
                 <p className='font-semibold text-3xl tracking-[3px] pt-6'>Content Not Found</p>
-                <Button name='BACK TO PORTFOLIO' onClick={() => window.location.href = routeName.portfolio} className='mt-6' />
+                <Button name='BACK TO PORTFOLIO' onClick={() => (window.location.href = routeName.portfolio)} className='mt-6' />
               </div>
             )}
           </div>
