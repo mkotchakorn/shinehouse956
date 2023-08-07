@@ -3,27 +3,12 @@ import { useRef, useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
 
+const arrow_slick = 'absolute w-1/2 h-1/2 md:w-[50px] md:h-[100%] flex items-center'
+
 export default function PreviewImages(props) {
   const imagesLength = props.images.length;
   const inputRef = useRef(null);
   const [idx, setIdx] = useState(props.idxImage || 0);
-  //   const [touchstartX, setTouchstartX] = useState(0);
-  //   const [touchendX, setTouchendX] = useState(0);
-
-  //   const checkDirection = () => {
-  //     if (touchendX < touchstartX && idx !== 0) {
-  //       console.log('left', idx);
-  //       setIdx(idx + 1);
-  //       setTouchstartX(0);
-  //       setTouchendX(0);
-  //     }
-  //     if (touchendX > touchstartX && idx + 1 !== imagesLength) {
-  //       console.log('right', idx);
-  //       setIdx(idx - 1);
-  //       setTouchstartX(0);
-  //       setTouchendX(0);
-  //     }
-  //   };
 
   useEffect(() => {
     setTimeout(() => {
@@ -42,29 +27,27 @@ export default function PreviewImages(props) {
           else if (e.key === 'ArrowRight' && idx + 1 !== imagesLength) setIdx(idx + 1);
           else if (e.key === 'Escape') props.setIsPreview(false);
         }}
+        readonly
+        inputmode='none'
         className='absolute h-0 w-0 opacity-0 overflow-hidden'
       />
 
       {idx !== 0 && (
-        <FontAwesomeIcon
-          icon={faChevronLeft}
+        <div
           onClick={(e) => {
             e.stopPropagation();
             setIdx(idx - 1);
             if (inputRef.current) inputRef.current.focus();
           }}
-          className='text-white text-lg md:text-3xl opacity-75 cursor-pointer relative -left-2 md:left-0'
-        />
+          className={`${arrow_slick} cursor-pointer justify-start left-0 pl-1 md:pl-3`}
+        >
+          <FontAwesomeIcon icon={faChevronLeft} className='text-white text-lg md:text-3xl opacity-75' />
+        </div>
       )}
       <img
         id='img-preview'
         src={props.images[idx]}
         alt='img-preview'
-        // onTouchStart={(e) => setTouchstartX(e.changedTouches[0].screenX)}
-        // onTouchEnd={(e) => {
-        //   setTouchendX(e.changedTouches[0].screenX);
-        //   checkDirection();
-        // }}
         onClick={(e) => {
           e.stopPropagation();
           if (inputRef.current) inputRef.current.focus();
@@ -72,15 +55,16 @@ export default function PreviewImages(props) {
         className='max-w-[95%] md:max-w-[75%] w-auto h-auto max-h-full object-contain mx-auto'
       />
       {idx + 1 !== imagesLength && (
-        <FontAwesomeIcon
-          icon={faChevronRight}
+        <div
           onClick={(e) => {
             e.stopPropagation();
             setIdx(idx + 1);
             if (inputRef.current) inputRef.current.focus();
           }}
-          className='text-white text-lg md:text-3xl opacity-75 cursor-pointer relative -right-2 md:right-0'
-        />
+          className={`${arrow_slick} cursor-pointer justify-end right-0 pr-1 md:pr-3`}
+        >
+          <FontAwesomeIcon icon={faChevronRight} className='text-white text-lg md:text-3xl opacity-75' />
+        </div>
       )}
     </div>
   );
