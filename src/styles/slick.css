@@ -41,7 +41,11 @@
 }
 
 .slick-slider.process-banner .slick-dots li:not(.slick-active) button::before {
-  @apply text-background/70;
+  @apply text-background/80;
+}
+
+.slick-slider.process-banner .slick-list {
+  @apply sm:max-w-[80%] mx-auto;
 }
 
 @screen xl {

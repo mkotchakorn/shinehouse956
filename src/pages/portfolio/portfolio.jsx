@@ -64,14 +64,14 @@ export default function Portfolio() {
             <div className='flex flex-wrap -mx-2'>
               {_.map(portfolios, (portfolio, idx) => {
                 return (
-                  <div key={idx} className='p-2 w-1/2 sm:w-1/3 md:w-1/4'>
+                  <div key={idx} className='px-2 py-1 w-1/2 sm:w-1/3 md:w-1/4'>
                     <div onClick={() => window.location.href = `${routeName.portfolio}/${portfolio.type}/${portfolio.path}`} className='card-thumbnail cursor-pointer'>
-                      <div className='overflow-hidden'>
+                      <div className='overflow-hidden rounded-lg'>
                         <div className='thumbnail'>
                           <img src={portfolio.preview} alt={portfolio.project} title={portfolio.type} />
                         </div>
                       </div>
-                      <p className='font-semibold uppercase tracking-[2px] text-center truncate max-w-[90%] mx-auto pt-[2px]'>{portfolio.project || 'SHINE HOUSE'}</p>
+                      <p className='font-semibold uppercase tracking-[2px] text-center max-w-[90%] mx-auto min-h-[48px] pt-2 line-clamp-2'>{portfolio.project || 'SHINE HOUSE'}</p>
                     </div>
                   </div>
                 );
