@@ -1,6 +1,8 @@
+import { useState } from 'react';
 import _ from 'lodash';
 import Slider from 'react-slick';
 import { process, process_banner } from '../../assets/data/process/process';
+import PreviewImages from '../PreviewImages';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
@@ -9,15 +11,31 @@ const settings = {
   arrows: true,
   infinite: true,
   speed: 1000,
-  slidesToShow: 1,
+  slidesToShow: 2,
   slidesToScroll: 1,
-  autoplay: true,
-  autoplaySpeed: 3000,
+  swipeToSlide: true,
+  autoplay: false,
   pauseOnHover: false,
   className: 'process-banner',
+  responsive: [
+    {
+      breakpoint: 640,
+      settings: {
+        slidesToShow: 1,
+      },
+    },
+  ],
 };
 
 export default function SectionProcess(props) {
+  const [isPreview, setIsPreview] = useState(false);
+  const [idxImage, setIdxImage] = useState(0);
+
+  const previewImage = (idx) => {
+    setIsPreview(true);
+    setIdxImage(idx);
+  };
+
   return (
     <div className='card'>
       <div className='font-semibold header tracking-[1px]'>
@@ -43,12 +61,14 @@ export default function SectionProcess(props) {
         <Slider {...settings}>
           {_.map(process_banner, (img, idx) => {
             return (
-              <div key={idx} className='relative pt-[75%]'>
-                <img src={img} alt={idx} className='absolute inset-0 w-full h-full --object-cover object-contain pointer-events-none' />
+              <div key={idx} onClick={() => previewImage(idx)} className='cursor-pointer'>
+                <img src={img} alt={idx} className='w-full h-full object-cover aspect-[3/4] pointer-events-none sm:px-2' />;
               </div>
             );
           })}
         </Slider>
+
+        {isPreview && <PreviewImages images={process_banner} idxImage={idxImage} isPreview={isPreview} setIsPreview={(val) => setIsPreview(val)} />}
       </div>
     </div>
   );

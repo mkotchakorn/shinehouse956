@@ -8,9 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '../../component/common/Button';
 import { routeName } from '../../routes/routes';
 import { interior, exterior } from '../../assets/data/portfolio/portfolio';
+import PreviewImages from '../../component/PreviewImages';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import PreviewImages from '../../component/PreviewImages';
 
 const settings = {
   dots: true,

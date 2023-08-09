@@ -10,14 +10,14 @@ export default function PortfolioPreview(props) {
       <div className='flex flex-wrap -mx-2'>
         {_.map(portfoliosHome, (portfolio, idx) => {
           return (
-            <div key={idx} className='p-2 w-1/2 sm:w-1/3 md:w-1/4'>
+            <div key={idx} className='px-2 py-1 w-1/2 sm:w-1/3 md:w-1/4'>
               <div onClick={() => window.location.href = `${routeName.portfolio}/${portfolio.type}/${portfolio.path}`} className='card-thumbnail cursor-pointer'>
-                <div className='overflow-hidden'>
+                <div className='overflow-hidden rounded-lg'>
                   <div className='thumbnail'>
                     <img src={portfolio.banner} alt={portfolio.desc.project} title={portfolio.type} />
                   </div>
                 </div>
-                <p className='font-semibold uppercase tracking-[2px] text-center truncate max-w-[90%] mx-auto pt-[2px]'>{portfolio.desc.project || 'SHINE HOUSE'}</p>
+                <p className='font-semibold uppercase tracking-[2px] text-center truncate max-w-[90%] mx-auto min-h-[48px] pt-2 line-clamp-2'>{portfolio.desc.project || 'SHINE HOUSE'}</p>
               </div>
             </div>
           );
