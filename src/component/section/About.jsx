@@ -8,7 +8,7 @@ export default function SectionAbout(props) {
   return (
     <div className='card'>
       <div className='flex flex-col sm:flex-row'>
-        <img src={about.banner} alt='about' className='mx-auto max-w-[300px] flex-none object-cover hidden lg:block' />
+        <img src={about.banner} alt='about' className='mx-auto max-w-[300px] flex-none object-cover hidden lg:block rounded-lg' />
         <div className='pt-4 sm:pt-0 lg:pl-4 xl:pl-8 flex-1'>
           <p className='font-bold header xl:text-4xl tracking-[3px] mb-1 pb-2 tablet:pb-0'>{about.title}</p>
           {_.map(about.concept, (cpt, idx) => {
