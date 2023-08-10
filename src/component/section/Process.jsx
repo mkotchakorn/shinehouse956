@@ -61,8 +61,8 @@ export default function SectionProcess(props) {
         <Slider {...settings}>
           {_.map(process_banner, (img, idx) => {
             return (
-              <div key={idx} onClick={() => previewImage(idx)} className='cursor-pointer'>
-                <img src={img} alt={idx} className='w-full h-full object-cover aspect-[3/4] pointer-events-none sm:px-2' />;
+              <div key={idx} onClick={() => previewImage(idx)} className='cursor-pointer sm:px-2'>
+                <img src={img} alt={idx} className='w-full h-full object-cover aspect-[3/4] pointer-events-none rounded-lg' />;
               </div>
             );
           })}

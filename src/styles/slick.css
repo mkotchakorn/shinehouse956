@@ -7,12 +7,13 @@
   font-size: 28px;
 }
 
-.slick-slider .slick-arrow.slick-prev::before {
-  content: '\e5e0';
-}
-
+.slick-slider .slick-arrow.slick-prev::before,
 .slick-slider .slick-arrow.slick-next::before {
   content: '\e5e1';
+}
+
+.slick-slider .slick-arrow.slick-prev::before {
+  @apply -rotate-180 block;
 }
 
 .slick-slider .slick-dots {
@@ -45,7 +46,7 @@
 }
 
 .slick-slider.process-banner .slick-list {
-  @apply sm:max-w-[80%] mx-auto;
+  @apply sm:max-w-[860px] mx-auto;
 }
 
 @screen xl {
