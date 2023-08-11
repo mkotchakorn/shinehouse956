@@ -45,7 +45,7 @@ export default function Portfolio() {
         <div className='pt-10'>
           <div className='card'>
             <div className='sm:flex justify-between items-center'>
-              <p className='font-semibold header tracking-[3px] pb-2'>PORTFOLIO</p>
+              <p className='--font-semibold font-medium header tracking-[3px] pb-2'>PORTFOLIO</p>
               <div className='sm:flex items-center -mx-[10px] sm:-mx-[6px]'>
                 <div className='radio-item'>
                   <input type='radio' name='all' id='all' checked={filter === 'all'} onChange={() => onChangeFilter('all')} className='custom-radio' />
@@ -71,7 +71,7 @@ export default function Portfolio() {
                           <img src={portfolio.preview} alt={portfolio.project} title={portfolio.type} />
                         </div>
                       </div>
-                      <p className='font-semibold uppercase tracking-[2px] text-center max-w-[90%] mx-auto min-h-[48px] pt-2 line-clamp-2'>{portfolio.project || 'SHINE HOUSE'}</p>
+                      <p className='--font-semibold font-medium uppercase tracking-[2px] text-center max-w-[90%] mx-auto min-h-[48px] pt-2 line-clamp-2'>{portfolio.project || 'SHINE HOUSE'}</p>
                     </div>
                   </div>
                 );

@@ -6,7 +6,7 @@ import { portfoliosHome } from '../../assets/data/portfolio/portfolio';
 export default function PortfolioPreview(props) {
   return (
     <div className='card'>
-      <p className='font-semibold header tracking-[3px] pb-2'>PORTFOLIO</p>
+      <p className='--font-semibold font-medium header tracking-[3px] pb-2'>PORTFOLIO</p>
       <div className='flex flex-wrap -mx-2'>
         {_.map(portfoliosHome, (portfolio, idx) => {
           return (
@@ -17,7 +17,7 @@ export default function PortfolioPreview(props) {
                     <img src={portfolio.banner} alt={portfolio.desc.project} title={portfolio.type} />
                   </div>
                 </div>
-                <p className='font-semibold uppercase tracking-[2px] text-center truncate max-w-[90%] mx-auto min-h-[48px] pt-2 line-clamp-2'>{portfolio.desc.project || 'SHINE HOUSE'}</p>
+                <p className='--font-semibold font-medium uppercase tracking-[2px] text-center truncate max-w-[90%] mx-auto min-h-[48px] pt-2 line-clamp-2'>{portfolio.desc.project || 'SHINE HOUSE'}</p>
               </div>
             </div>
           );

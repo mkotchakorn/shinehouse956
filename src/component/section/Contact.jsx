@@ -82,13 +82,13 @@ export default function SectionContact() {
         <p className='text-center font-semibold header tracking-[3px]'>CONTACT US</p>
         <div className='pt-6'>
           <p className='text-primary font-semibold text-base'>ADDRESS</p>
-          <p className='whitespace-pre-wrap font-medium pt-3'>{contact.address}</p>
+          <p className='whitespace-pre-wrap --font-medium pt-3'>{contact.address}</p>
         </div>
         <div className='sm:flex justify-between'>
           <div>
             <div className='pt-6'>
               <p className='text-primary font-semibold text-base'>CALL US</p>
-              <div className='whitespace-pre-wrap font-medium pt-2'>
+              <div className='whitespace-pre-wrap --font-medium pt-2'>
                 {_.map(contact.call, (call, idx) => {
                   return (
                     <a key={call} href={`tel:${call}`} className='hover:text-primary transition-all duration-300'>
@@ -123,21 +123,21 @@ export default function SectionContact() {
       </div>
       <div className={`flex flex-col w-full md:w-1/2 card bg-black/70 md:pt-8 md:pb-5 xl:px-10 ${isSending || isSendSuccess ? 'pointer-events-none' : ''}`}>
         <div>
-          <p className='text-white font-medium text-base pb-2'>FULL NAME</p>
+          <p className='text-white --font-medium text-base pb-2'>FULL NAME</p>
           <Input name='full_name' onChange={handleChange} value={getInTouchForm.full_name} error={error.full_name} />
         </div>
         <div className='sm:flex'>
           <div className='w-full pt-4 sm:pr-2'>
-            <p className='text-white font-medium text-base pb-2'>E-MAIL</p>
+            <p className='text-white --font-medium text-base pb-2'>E-MAIL</p>
             <Input name='email' onChange={handleChange} value={getInTouchForm.email} error={error.emailValidation || error.email} />
           </div>
           <div className='w-full pt-4 sm:pl-2'>
-            <p className='text-white font-medium text-base pb-2'>PHONE</p>
+            <p className='text-white --font-medium text-base pb-2'>PHONE</p>
             <Input name='phone' onChange={handleChange} value={getInTouchForm.phone} error={error.phoneValidation || error.phone} />
           </div>
         </div>
         <div className='pt-4'>
-          <p className='text-white font-medium text-base pb-2'>MESSAGE</p>
+          <p className='text-white --font-medium text-base pb-2'>MESSAGE</p>
           <Textarea name='message' onChange={handleChange} value={getInTouchForm.message} rows={4} />
         </div>
         <div className='mt-auto text-center'>

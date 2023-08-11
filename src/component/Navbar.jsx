@@ -21,7 +21,7 @@ export default function Navbar() {
         <div className='container py-3 flex justify-between w-full h-full'>
           <div className='flex items-end cursor-pointer'>
             <img src={logo} alt='logo' onClick={gotoHome} className='w-auto h-full' />
-            <div onClick={gotoHome} className='text-xxs font-semibold pl-2 -mb-[2px]'>
+            <div onClick={gotoHome} className='text-xxs --font-semibold font-medium pl-2 -mb-[2px]'>
               <p>SHINE HOUSE 956</p>
               <p className='pt-[2px]'>COMPANY LIMITED</p>
             </div>
@@ -34,7 +34,7 @@ export default function Navbar() {
                   <div
                     key={r.name}
                     onClick={() => (window.location.href = r.path)}
-                    className={`tablet:ml-4 px-1 py-[2px] text-[13px] rounded-full uppercase text-sm w-[104px] cursor-pointer pt-3 text-center cursor-pointer transition-colors duration-200 font-semibold hover:text-primary`}
+                    className={`tablet:ml-4 px-1 py-[2px] text-[13px] rounded-full uppercase text-sm w-[104px] pt-3 text-center cursor-pointer transition-colors duration-200 --font-semibold font-medium hover:text-primary`}
                   >
                     {r.name}
                   </div>

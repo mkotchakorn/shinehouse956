@@ -2,7 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url('./styles/main.css');
-@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@400;500;600;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@400;500;600;700&display=swap');
 
 *,
 html {
@@ -11,7 +12,8 @@ html {
 
 body {
   @apply bg-background text-black m-0 text-sm scroll-smooth overflow-hidden max-h-screen;
-  font-family: 'Anuphan', sans-serif;
+  /* font-family: 'Anuphan', sans-serif; */
+  font-family: 'Prompt', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

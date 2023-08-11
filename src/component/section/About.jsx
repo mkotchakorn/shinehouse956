@@ -10,10 +10,10 @@ export default function SectionAbout(props) {
       <div className='flex flex-col sm:flex-row'>
         <img src={about.banner} alt='about' className='mx-auto max-w-[300px] flex-none object-cover hidden lg:block rounded-lg' />
         <div className='pt-4 sm:pt-0 lg:pl-4 xl:pl-8 flex-1'>
-          <p className='font-bold header xl:text-4xl tracking-[3px] mb-1 pb-2 tablet:pb-0'>{about.title}</p>
+          <p className='--font-bold font-semibold header xl:text-4xl tracking-[3px] mb-1 pb-2 tablet:pb-0'>{about.title}</p>
           {_.map(about.concept, (cpt, idx) => {
             return (
-              <p key={cpt} className='inline-block tablet:text-base font-bold text-primary tracking-[2px]'>
+              <p key={cpt} className='inline-block tablet:text-base --font-bold font-semibold text-primary tracking-[2px]'>
                 {cpt}
                 {idx + 1 < about.concept.length && <span className='px-1 text-base leading-3 tablet:text-xl'>•</span>}
               </p>
