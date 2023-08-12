@@ -16,6 +16,6 @@
 }
 
 .radio-item input[type='radio']:checked + label:after {
-  @apply rounded-full w-[10px] h-[10px] absolute top-[7px] left-[7px] block bg-primary;
+  @apply rounded-full w-[10px] h-[10px] absolute top-[6px] left-[7px] block bg-primary;
   content: ' ';
 }

@@ -2,11 +2,12 @@ import _ from 'lodash';
 import Button from '../../component/common/Button';
 import { routeName } from '../../routes/routes';
 import { portfoliosHome } from '../../assets/data/portfolio/portfolio';
+import { titleClassName } from './portfolio';
 
 export default function PortfolioPreview(props) {
   return (
     <div className='card'>
-      <p className='--font-semibold font-medium header tracking-[3px] pb-2'>PORTFOLIO</p>
+      <p className='font-medium header tracking-[2px] pb-4'>PORTFOLIO</p>
       <div className='flex flex-wrap -mx-2'>
         {_.map(portfoliosHome, (portfolio, idx) => {
           return (
@@ -17,7 +18,7 @@ export default function PortfolioPreview(props) {
                     <img src={portfolio.banner} alt={portfolio.desc.project} title={portfolio.type} />
                   </div>
                 </div>
-                <p className='--font-semibold font-medium uppercase tracking-[2px] text-center truncate max-w-[90%] mx-auto min-h-[48px] pt-2 line-clamp-2'>{portfolio.desc.project || 'SHINE HOUSE'}</p>
+                <p className={titleClassName}>{portfolio.desc.project || 'SHINE HOUSE'}</p>
               </div>
             </div>
           );

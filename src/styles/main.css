@@ -24,9 +24,9 @@
 }
 
 .header {
-  @apply text-[28px] text-3xl;
+  @apply text-header md:text-3xl;
 }
 
 .card {
-  @apply mt-6 p-4 xl:py-8 xl:px-14 bg-background/80 rounded-3xl xl:rounded-[38px];
+  @apply mt-6 p-5 xl:py-8 xl:px-14 bg-background/80 rounded-3xl xl:rounded-[38px];
 }

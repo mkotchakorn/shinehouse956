@@ -5,6 +5,8 @@ import Button from '../../component/common/Button';
 import { portfoliosAll } from '../../assets/data/portfolio/portfolio';
 import { routeName } from '../../routes/routes';
 
+export const titleClassName = 'font-medium uppercase tracking-[1px] text-center max-w-[90%] mx-auto min-h-[48px] pt-2 line-clamp-2 whitespace-break-spaces'
+
 export default function Portfolio() {
   const DEFAULT_LENGTH = 16;
   const UP_TO_LENGTH = 8;
@@ -44,8 +46,8 @@ export default function Portfolio() {
       <div className='container'>
         <div className='pt-10'>
           <div className='card'>
-            <div className='sm:flex justify-between items-center'>
-              <p className='--font-semibold font-medium header tracking-[3px] pb-2'>PORTFOLIO</p>
+            <div className='sm:flex justify-between items-center mb-3'>
+              <p className='font-medium header tracking-[2px] pb-3 sm:pb-0'>PORTFOLIO</p>
               <div className='sm:flex items-center -mx-[10px] sm:-mx-[6px]'>
                 <div className='radio-item'>
                   <input type='radio' name='all' id='all' checked={filter === 'all'} onChange={() => onChangeFilter('all')} className='custom-radio' />
@@ -71,7 +73,7 @@ export default function Portfolio() {
                           <img src={portfolio.preview} alt={portfolio.project} title={portfolio.type} />
                         </div>
                       </div>
-                      <p className='--font-semibold font-medium uppercase tracking-[2px] text-center max-w-[90%] mx-auto min-h-[48px] pt-2 line-clamp-2'>{portfolio.project || 'SHINE HOUSE'}</p>
+                      <p className={titleClassName}>{portfolio.project || 'SHINE HOUSE'}</p>
                     </div>
                   </div>
                 );

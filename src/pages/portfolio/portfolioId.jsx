@@ -39,7 +39,7 @@ const settings = {
   ],
 };
 
-const title_class = '--font-medium sm:text-base';
+const title_class = 'sm:text-base';
 const body_class = 'sm:text-base pl-3';
 
 export default function PortfolioId() {
@@ -143,7 +143,7 @@ export default function PortfolioId() {
             )) || (
               <div className='text-center'>
                 <FontAwesomeIcon icon={faCircleExclamation} className='text-7xl' />
-                <p className='--font-semibold font-medium text-3xl tracking-[3px] pt-6'>Content Not Found</p>
+                <p className='font-medium text-3xl tracking-[2px] pt-6'>Content Not Found</p>
                 <Button name='BACK TO PORTFOLIO' onClick={() => (window.location.href = routeName.portfolio)} className='mt-6' />
               </div>
             )}

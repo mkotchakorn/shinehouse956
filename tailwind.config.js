@@ -11,6 +11,7 @@ module.exports = {
       },
       fontSize: {
         xxs: ['10px', '0.75rem'],
+        header: ['26px', '2rem'],
       },
       height: {
         navbar: '75px',
