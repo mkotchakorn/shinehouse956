@@ -12,7 +12,7 @@ export const data = {
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7],
   desc: {
-    project: 'Khun.Kratai condo',
+    project: `ASPIRE ASOKE RATCHADA OWNER K'KRATAI`,
     owner: '',
     location: '',
     architect: '',

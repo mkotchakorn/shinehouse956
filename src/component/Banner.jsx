@@ -9,13 +9,14 @@ const settings = {
   dots: false,
   arrows: false,
   infinite: true,
-  speed: 1000,
+  fade: true,
+  speed: 2000,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 3000,
   pauseOnHover: false,
-  className: 'bg-transparent',
+  className: 'bg-transparent main-banner',
 };
 
 export default function Banner() {
@@ -23,8 +24,8 @@ export default function Banner() {
     <Slider {...settings}>
       {_.map(banners, (b) => {
         return (
-          <div key={b.name} className='relative pt-[42.85%] md:pt-[40%]'>
-            <img src={b.image} alt={b.name} className='absolute inset-0 w-full h-full object-cover pointer-events-none' />
+          <div key={b.name} className='relative'>
+            <img src={b.image} alt={b.name} className='w-full h-full img-banner object-cover aspect-[4/3] md:aspect-[16/9] pointer-events-none' />
           </div>
         );
       })}

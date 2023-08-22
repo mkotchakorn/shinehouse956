@@ -11,7 +11,7 @@ export const data = {
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6],
   desc: {
-    project: 'Khun.Nun House',
+    project: `K'NUN HOUSE`,
     owner: '',
     location: '',
     architect: '',

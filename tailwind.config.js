@@ -14,7 +14,7 @@ module.exports = {
         header: ['26px', '2rem'],
       },
       height: {
-        navbar: '75px',
+        navbar: '70px',
       },
       screens: {
         tablet: '920px',

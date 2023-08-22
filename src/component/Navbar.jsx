@@ -19,12 +19,11 @@ export default function Navbar() {
     <div className={`fixed top-0 z-10 navbar w-full h-16 tablet:h-navbar`}>
       <nav className='w-full h-full'>
         <div className='container py-3 flex justify-between w-full h-full'>
-          <div className='flex items-end cursor-pointer'>
+          <div className='flex items-center cursor-pointer'>
             <img src={logo} alt='logo' onClick={gotoHome} className='w-auto h-full' />
-            <div onClick={gotoHome} className='text-xxs font-medium pl-2 -mb-[2px]'>
-              <p>SHINE HOUSE 956</p>
-              <p className='pt-[2px]'>COMPANY LIMITED</p>
-            </div>
+            <p onClick={gotoHome} className='text-xs tablet:text-sm font-medium pl-2'>
+              SHINE HOUSE 956 COMPANY LIMITED
+            </p>
           </div>
           <div className='flex items-center'>
             <FontAwesomeIcon icon={faBars} onClick={() => setIsExpanded((exp) => !exp)} className='tablet:hidden text-xl py-4' />
@@ -34,7 +33,7 @@ export default function Navbar() {
                   <div
                     key={r.name}
                     onClick={() => (window.location.href = r.path)}
-                    className={`tablet:ml-4 px-1 py-[2px] text-[13px] rounded-full uppercase text-sm w-[104px] pt-3 text-center cursor-pointer transition-colors duration-200 font-medium hover:text-primary`}
+                    className={`tablet:ml-4 uppercase text-sm w-[104px] text-center cursor-pointer transition-colors duration-200 font-medium hover:text-primary`}
                   >
                     {r.name}
                   </div>

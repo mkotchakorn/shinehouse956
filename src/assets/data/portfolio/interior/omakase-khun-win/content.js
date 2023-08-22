@@ -46,7 +46,7 @@ export const data = {
     image_20,
   ],
   desc: {
-    project: 'Omakase - Khun Win',
+    project: `JUK SUN. CHAE OMAKASE RESTAURANT`,
     owner: '',
     location: '',
     architect: '',

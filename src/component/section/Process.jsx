@@ -10,11 +10,12 @@ const settings = {
   dots: true,
   arrows: true,
   infinite: true,
-  speed: 1000,
-  slidesToShow: 2,
-  slidesToScroll: 1,
+  speed: 2000,
+  slidesToShow: 4,
+  slidesToScroll: 2,
   swipeToSlide: true,
-  autoplay: false,
+  autoplay: true,
+  autoplaySpeed: 4000,
   pauseOnHover: false,
   className: 'process-banner',
   responsive: [
@@ -22,12 +23,13 @@ const settings = {
       breakpoint: 640,
       settings: {
         slidesToShow: 1,
+        slidesToScroll: 1,
       },
     },
   ],
 };
 
-export default function SectionProcess(props) {
+export default function SectionProcess() {
   const [isPreview, setIsPreview] = useState(false);
   const [idxImage, setIdxImage] = useState(0);
 
