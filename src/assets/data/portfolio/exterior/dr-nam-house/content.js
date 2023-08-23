@@ -13,7 +13,7 @@ export const data = {
   type: 'exterior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8],
   desc: {
-    project: 'Dr.Nam’s house',
+    project: `Dr.Nam's house`,
     owner: '',
     location: 'Nan, Thailand',
     architect: 'Shine house design',
