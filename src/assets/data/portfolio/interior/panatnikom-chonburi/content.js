@@ -74,7 +74,7 @@ export const data = {
     image_34,
   ],
   desc: {
-    project: 'Panatnikom - Chonburi',
+    project: 'TWIN HOUSE - CHONBURI',
     owner: '',
     location: '',
     architect: '',

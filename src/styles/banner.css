@@ -1,3 +1,19 @@
 .slick-slider .slick-slide > div {
   @apply flex h-full;
 }
+
+/* main banner */
+.main-banner.slick-slider {
+  @apply h-auto overflow-hidden;
+}
+
+.main-banner.slick-slider .slick-list,
+.main-banner.slick-slider .slick-track {
+  @apply h-auto;
+}
+
+.main-banner.slick-slider .slick-list .img-banner {
+  @screen tablet {
+    max-height: calc(100vh - theme('height.navbar') - 130px);
+  }
+}

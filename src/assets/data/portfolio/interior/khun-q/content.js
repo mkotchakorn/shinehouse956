@@ -13,7 +13,7 @@ export const data = {
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8],
   desc: {
-    project: 'Khun.Q',
+    project: `NUE NOBLE CONDO OWNER K'Q`,
     owner: '',
     location: '',
     architect: '',

@@ -13,7 +13,7 @@ export const data = {
   type: 'exterior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8],
   desc: {
-    project: 'K.Satit',
+    project: `SATIT'S HOUSE`,
     owner: '',
     location: 'Ratchapruek, Bangkok',
     architect: 'Shine House Design',

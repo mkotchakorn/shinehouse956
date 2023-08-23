@@ -9,7 +9,7 @@ export const data = {
   type: 'interior',
   images: [image_1, image_2, image_3, image_4],
   desc: {
-    project: 'Dr.Plammy Clinic',
+    project: `DR.PLAMMY'S CLINIC`,
     owner: '',
     location: '',
     architect: '',

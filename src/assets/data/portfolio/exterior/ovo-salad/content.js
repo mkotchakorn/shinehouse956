@@ -9,7 +9,7 @@ export const data = {
   type: 'exterior',
   images: [image_1, image_2, image_3, image_4],
   desc: {
-    project: 'ovo salad',
+    project: `OVO SALAD CAFE AND RESTAURANT`,
     owner: '',
     location: 'Nan , Thailand',
     architect: 'Shine house design',

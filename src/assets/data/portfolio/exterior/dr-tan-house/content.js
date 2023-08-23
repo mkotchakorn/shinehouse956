@@ -10,7 +10,7 @@ export const data = {
   type: 'exterior',
   images: [image_1, image_2, image_3, image_4, image_5],
   desc: {
-    project: 'Dr.Tan.',
+    project: `DR.TAN'S HOUSE`,
     owner: '',
     location: 'Rangsit, Pathum-Thani.',
     architect: 'Shine House',
