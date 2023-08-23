@@ -3,7 +3,7 @@ import { useLocation } from 'react-router-dom';
 import Slider from 'react-slick';
 import _ from 'lodash';
 import AppLayout from '../../component/AppLayout';
-import { faCircleExclamation } from '@fortawesome/free-solid-svg-icons';
+import { faXmarkCircle } from '@fortawesome/free-regular-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Button from '../../component/common/Button';
 import { routeName } from '../../routes/routes';
@@ -47,7 +47,9 @@ export default function PortfolioId() {
   const param = location.pathname.substring(1).split('/');
   const paramType = param[1];
   const paramIndex = param[2];
-  const portfolio = paramType === 'interior' ? interior[paramIndex - 1] : exterior[paramIndex - 1];
+  const data = paramType === 'interior' ? interior : exterior;
+  const getData = () => _.find(data, { path: paramIndex });
+  const portfolio = getData();
 
   const [isPreview, setIsPreview] = useState(false);
   const [idxImage, setIdxImage] = useState(0);
@@ -141,10 +143,10 @@ export default function PortfolioId() {
                 {isPreview && <PreviewImages images={portfolio.images} idxImage={idxImage} isPreview={isPreview} setIsPreview={(val) => setIsPreview(val)} />}
               </>
             )) || (
-              <div className='text-center'>
-                <FontAwesomeIcon icon={faCircleExclamation} className='text-7xl' />
-                <p className='font-medium text-3xl tracking-[2px] pt-6'>Content Not Found</p>
-                <Button name='BACK TO PORTFOLIO' onClick={() => (window.location.href = routeName.portfolio)} className='mt-6' />
+              <div className='text-center py-10'>
+                <FontAwesomeIcon icon={faXmarkCircle} className='text-6xl' />
+                <p className='text-2xl tracking-[2px] pt-6'>Content Not Found</p>
+                <Button name='BACK TO PORTFOLIO' onClick={() => (window.location.href = routeName.portfolio)} className='mt-10' />
               </div>
             )}
           </div>
