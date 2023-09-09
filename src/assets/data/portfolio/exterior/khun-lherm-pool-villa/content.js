@@ -18,7 +18,7 @@ import image_17 from './Ex8.jpg';
 import banner from './banner-Ex1.jpg';
 
 export const data = {
-  path: '5',
+  path: 'pool-villa-saraburi',
   type: 'exterior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8, image_9, image_10, image_11, image_12, image_13, image_14, image_15, image_16, image_17],
   desc: {

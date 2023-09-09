@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import _ from 'lodash';
-import logo from '../assets/images/dLogo.png';
+import logo from '../assets/images/logo.png';
 import { router, routeName } from '../routes/routes';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark as faXMark } from '@fortawesome/free-solid-svg-icons';

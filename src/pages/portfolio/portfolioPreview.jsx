@@ -12,10 +12,10 @@ export default function PortfolioPreview(props) {
         {_.map(portfoliosHome, (portfolio, idx) => {
           return (
             <div key={idx} className='px-2 py-1 w-1/2 sm:w-1/3 md:w-1/4'>
-              <div onClick={() => window.location.href = `${routeName.portfolio}/${portfolio.type}/${portfolio.path}`} className='card-thumbnail cursor-pointer'>
+              <div onClick={() => (window.location.href = `${routeName.portfolio}/${portfolio.type}/${portfolio.path}`)} className='card-thumbnail cursor-pointer'>
                 <div className='overflow-hidden rounded-lg'>
                   <div className='thumbnail'>
-                    <img src={portfolio.banner} alt={portfolio.desc.project} title={portfolio.type} />
+                    <img src={portfolio.preview} alt={portfolio.desc.project} title={portfolio.type} />
                   </div>
                 </div>
                 <p className={titleClassName}>{portfolio.desc.project || 'SHINE HOUSE'}</p>
@@ -24,7 +24,7 @@ export default function PortfolioPreview(props) {
           );
         })}
         <div className='mt-6 w-full text-center'>
-          <Button name='SEE MORE' onClick={() => window.location.href = routeName.portfolio} />
+          <Button name='SEE MORE' onClick={() => (window.location.href = routeName.portfolio)} />
         </div>
       </div>
     </div>

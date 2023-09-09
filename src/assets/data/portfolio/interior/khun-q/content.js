@@ -9,12 +9,12 @@ import image_8 from './5-min.jpg';
 import banner from './banner-2.jpg';
 
 export const data = {
-  path: '9',
+  path: 'nue-noble-condo',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8],
   desc: {
-    project: `NUE NOBLE CONDO OWNER K'Q`,
-    owner: '',
+    project: `NUE NOBLE CONDO`,
+    owner: `K'Q`,
     location: '',
     architect: '',
     budget: '',

@@ -21,7 +21,7 @@ import image_20 from './IMG_1397.jpg';
 import banner from './banner-omakase.jpg';
 
 export const data = {
-  path: '11',
+  path: 'juk-sun-chae-omakase-restaurant',
   type: 'interior',
   images: [
     image_1,

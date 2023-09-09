@@ -9,7 +9,7 @@ import image_8 from './8-min.jpg';
 import banner from './banner-5.jpg';
 
 export const data = {
-  path: '8',
+  path: 'satit-house',
   type: 'exterior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8],
   desc: {
@@ -22,5 +22,5 @@ export const data = {
     facilities: ['5 Bedroom', '4 Powders room', '1 Living Room', '1 Fitness', '1 Entertainment Room', '1 Dining Room', '1 Kitchen Room', '1 Studio', 'Car Park', 'Swimming Pool'],
   },
   banner: banner,
-  preview: image_5,
+  preview: image_1,
 };

@@ -8,7 +8,7 @@ import image_7 from './อาคารAสายปัญญา-5.jpg';
 import banner from './banner-อาคารAสายปัญญา-3.jpg';
 
 export const data = {
-  path: '13',
+  path: 'saipunya-house',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7],
   desc: {

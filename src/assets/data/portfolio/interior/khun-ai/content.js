@@ -16,12 +16,12 @@ import image_15 from './IMG_5188-min.jpg';
 import banner from './banner-IMG_1835.jpg';
 
 export const data = {
-  path: '6',
+  path: 'tampo-grand-wuttakad',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8, image_9, image_10, image_11, image_12, image_13, image_14, image_15],
   desc: {
-    project: `TEMPO GRAND WUTTAKAD OWNER K'AI`,
-    owner: '',
+    project: `TEMPO GRAND WUTTAKAD`,
+    owner: `K'Ai`,
     location: '',
     architect: '',
     budget: '',

@@ -5,7 +5,7 @@ import image_4 from './8-min.jpg';
 import banner from './banner-4.jpg';
 
 export const data = {
-  path: '4',
+  path: 'dr-plammy-clinic',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4],
   desc: {

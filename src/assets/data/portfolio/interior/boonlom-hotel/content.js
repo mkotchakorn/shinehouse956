@@ -10,7 +10,7 @@ import image_9 from './09-min.jpg';
 import banner from './banner-04.jpg';
 
 export const data = {
-  path: '1',
+  path: 'boonlom-hotel',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8, image_9],
   desc: {
