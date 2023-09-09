@@ -35,7 +35,7 @@ import image_34 from './ห้องน้ำขั้น 2-2.jpg';
 import banner from './banner-01-01.jpg';
 
 export const data = {
-  path: '12',
+  path: 'twin-house-chonburi',
   type: 'interior',
   images: [
     image_1,

@@ -4,7 +4,7 @@
 
 /* main banner */
 .main-banner.slick-slider {
-  @apply h-auto overflow-hidden;
+  @apply h-auto overflow-hidden bg-primary;
 }
 
 .main-banner.slick-slider .slick-list,

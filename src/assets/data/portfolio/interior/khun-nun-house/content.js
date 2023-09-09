@@ -7,7 +7,7 @@ import image_6 from './คุณนัน 12-min.jpg';
 import banner from './banner-คุณนัน 1117.jpg';
 
 export const data = {
-  path: '8',
+  path: 'khun-nun-house',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6],
   desc: {
@@ -20,5 +20,5 @@ export const data = {
     facilities: [],
   },
   banner: banner,
-preview:image_2 ,
+  preview: image_2,
 };

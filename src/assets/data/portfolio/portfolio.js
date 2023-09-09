@@ -9,6 +9,9 @@ import { data as ex_content_7 } from './exterior/khun-pradit-house/content';
 import { data as ex_content_8 } from './exterior/khun-satit-private-residence/content';
 import { data as ex_content_9 } from './exterior/ovo-salad/content';
 import { data as ex_content_10 } from './exterior/twins-house-chonburi/content';
+import { data as ex_content_11 } from './exterior/dr-suthon/content';
+import { data as ex_content_12 } from './exterior/khun-fai/content';
+
 // interior
 import { data as in_content_1 } from './interior/boonlom-hotel/content';
 import { data as in_content_2 } from './interior/cp-house-type-a/content';
@@ -23,8 +26,10 @@ import { data as in_content_10 } from './interior/lazy-panda/content';
 import { data as in_content_11 } from './interior/omakase-khun-win/content';
 import { data as in_content_12 } from './interior/panatnikom-chonburi/content';
 import { data as in_content_13 } from './interior/saipunya-house/content';
+import { data as in_content_14 } from './interior/dr-suthon/content';
+import { data as in_content_15 } from './interior/khun-fai/content';
 
-export const portfoliosHome = [ex_content_3, ex_content_5, ex_content_8, ex_content_10, in_content_12, in_content_2, in_content_3, in_content_11];
+export const portfoliosHome = [ex_content_3, in_content_14, ex_content_8, in_content_15, in_content_12, in_content_2, in_content_3, in_content_11];
 
 export const portfoliosAll = [
   {
@@ -106,10 +111,10 @@ export const portfoliosAll = [
     path: in_content_9.path,
   },
   {
-    project: in_content_1.desc.project,
-    preview: in_content_1.preview,
-    type: in_content_1.type,
-    path: in_content_1.path,
+    project: in_content_14.desc.project,
+    preview: in_content_14.preview,
+    type: in_content_14.type,
+    path: in_content_14.path,
   },
   {
     project: in_content_6.desc.project,
@@ -118,10 +123,10 @@ export const portfoliosAll = [
     path: in_content_6.path,
   },
   {
-    project: in_content_13.desc.project,
-    preview: in_content_13.preview,
-    type: in_content_13.type,
-    path: in_content_13.path,
+    project: in_content_15.desc.project,
+    preview: in_content_15.preview,
+    type: in_content_15.type,
+    path: in_content_15.path,
   },
   {
     project: in_content_8.desc.project,
@@ -165,11 +170,37 @@ export const portfoliosAll = [
     type: in_content_10.type,
     path: in_content_10.path,
   },
+  {
+    project: ex_content_11.desc.project,
+    preview: ex_content_11.preview,
+    type: ex_content_11.type,
+    path: ex_content_11.path,
+  },
+  {
+    project: ex_content_12.desc.project,
+    preview: ex_content_12.preview,
+    type: ex_content_12.type,
+    path: ex_content_12.path,
+  },
+  {
+    project: in_content_1.desc.project,
+    preview: in_content_1.preview,
+    type: in_content_1.type,
+    path: in_content_1.path,
+  },
+  {
+    project: in_content_13.desc.project,
+    preview: in_content_13.preview,
+    type: in_content_13.type,
+    path: in_content_13.path,
+  },
 ];
 
-export const exterior = [ex_content_2, ex_content_4, ex_content_3, ex_content_8, ex_content_10, ex_content_5, ex_content_7, ex_content_1, ex_content_6, ex_content_9];
+export const exterior = [ex_content_11, ex_content_12, ex_content_2, ex_content_4, ex_content_3, ex_content_8, ex_content_10, ex_content_5, ex_content_7, ex_content_1, ex_content_6, ex_content_9];
 
 export const interior = [
+  in_content_14,
+  in_content_15,
   in_content_12,
   in_content_2,
   in_content_3,

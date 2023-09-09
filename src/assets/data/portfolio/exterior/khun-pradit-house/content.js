@@ -9,7 +9,7 @@ import image_8 from './Ex3-min.jpg';
 import banner from './banner-Ex2.jpg';
 
 export const data = {
-  path: '7',
+  path: 'riverside-private-resistance',
   type: 'exterior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8],
   desc: {

@@ -10,11 +10,11 @@ const settings = {
   arrows: false,
   infinite: true,
   fade: true,
-  speed: 2000,
+  speed: 3000,
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 3000,
+  autoplaySpeed: 5000,
   pauseOnHover: false,
   className: 'bg-transparent main-banner',
 };
@@ -22,10 +22,10 @@ const settings = {
 export default function Banner() {
   return (
     <Slider {...settings}>
-      {_.map(banners, (b) => {
+      {_.map(banners, (b, idx) => {
         return (
-          <div key={b.name} className='relative'>
-            <img src={b.image} alt={b.name} className='w-full h-full img-banner object-cover aspect-[4/3] md:aspect-[16/9] pointer-events-none' />
+          <div key={idx} className='relative'>
+            <img src={b} alt={idx} className='w-full h-full img-banner object-cover aspect-[16/9] pointer-events-none' />
           </div>
         );
       })}

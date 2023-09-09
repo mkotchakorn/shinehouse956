@@ -8,12 +8,12 @@ import image_7 from './IMG_762.jpg';
 import banner from './banner-kratai.jpg';
 
 export const data = {
-  path: '7',
+  path: 'aspire-asoke-ratchrda',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7],
   desc: {
-    project: `ASPIRE ASOKE RATCHADA OWNER K'KRATAI`,
-    owner: '',
+    project: `ASPIRE ASOKE RATCHADA`,
+    owner: `K'Kratai`,
     location: '',
     architect: '',
     budget: '',

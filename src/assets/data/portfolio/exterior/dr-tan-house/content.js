@@ -6,7 +6,7 @@ import image_5 from './5.jpg';
 import banner from './banner-1.jpg';
 
 export const data = {
-  path: '3',
+  path: 'dr-tan-house',
   type: 'exterior',
   images: [image_1, image_2, image_3, image_4, image_5],
   desc: {

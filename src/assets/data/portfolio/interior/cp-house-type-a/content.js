@@ -11,7 +11,7 @@ import image_10 from './1010.jpg';
 import banner from './banner-222.jpg';
 
 export const data = {
-  path: '2',
+  path: 'tascani-village-angelo-type',
   type: 'interior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8, image_9, image_10],
   desc: {
