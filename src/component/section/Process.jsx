@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
 const settings = {
-  dots: true,
+  dots: false,
   arrows: true,
   infinite: true,
   speed: 2000,
@@ -22,8 +22,10 @@ const settings = {
     {
       breakpoint: 640,
       settings: {
+        centerMode: true,
+        infinite: true,
+        centerPadding: '35px',
         slidesToShow: 1,
-        slidesToScroll: 1,
       },
     },
   ],
@@ -63,7 +65,7 @@ export default function SectionProcess() {
         <Slider {...settings}>
           {_.map(process_banner, (img, idx) => {
             return (
-              <div key={idx} onClick={() => previewImage(idx)} className='cursor-pointer sm:px-2'>
+              <div key={idx} onClick={() => previewImage(idx)} className='px-2 cursor-pointer'>
                 <img src={img} alt={idx} className='w-full h-full object-cover aspect-[3/4] pointer-events-none rounded-lg' />;
               </div>
             );
