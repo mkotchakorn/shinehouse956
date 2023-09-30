@@ -2,7 +2,7 @@ import qrCode from './qr-code.png';
 
 export const contact = {
   qr_code: qrCode,
-  address: `285 charoen nakhon 40\nKhwaeng Bang Lamphu Lang,\nKhet Khlong San,\nBangkok, 10600 Thailand`,
+  address: `285 Charoen Nakhon 40\nKhwaeng Bang Lamphu Lang,\nKhet Khlong San,\nBangkok, 10600 Thailand`,
   call: ['096-165-5569', '065-669-4196'],
   get_in_touch: [
     {

@@ -21,7 +21,7 @@ import image_20 from './IMG_1397.jpg';
 import banner from './banner-omakase.jpg';
 
 export const data = {
-  path: 'juk-sun-chae-omakase-restaurant',
+  path: 'juksunchae',
   type: 'interior',
   images: [
     image_1,
@@ -46,7 +46,7 @@ export const data = {
     image_20,
   ],
   desc: {
-    project: `JUK SUN. CHAE OMAKASE RESTAURANT`,
+    project: `JUKSUNCHAE`,
     owner: '',
     location: '',
     architect: '',

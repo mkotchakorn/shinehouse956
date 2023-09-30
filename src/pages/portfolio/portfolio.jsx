@@ -70,10 +70,10 @@ export default function Portfolio() {
                     <div onClick={() => window.location.href = `${routeName.portfolio}/${portfolio.type}/${portfolio.path}`} className='card-thumbnail cursor-pointer'>
                       <div className='overflow-hidden rounded-lg'>
                         <div className='thumbnail'>
-                          <img src={portfolio.preview} alt={portfolio.project} title={portfolio.type} />
+                          <img src={portfolio.preview} alt={portfolio.desc.project} title={portfolio.type} />
                         </div>
                       </div>
-                      <p className={titleClassName}>{portfolio.project || 'SHINE HOUSE'}</p>
+                      <p className={titleClassName}>{portfolio.desc.project || 'SHINE HOUSE'}</p>
                     </div>
                   </div>
                 );
