@@ -9,11 +9,11 @@ import image_8 from './8-min.jpg';
 import banner from './banner-5.jpg';
 
 export const data = {
-  path: 'satit-house',
+  path: 'khun-satit-house',
   type: 'exterior',
   images: [image_1, image_2, image_3, image_4, image_5, image_6, image_7, image_8],
   desc: {
-    project: `SATIT'S HOUSE`,
+    project: `K'SATIT'S HOUSE`,
     owner: '',
     location: 'Ratchapruek, Bangkok',
     architect: 'Shine House Design',
