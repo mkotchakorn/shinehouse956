@@ -53,7 +53,7 @@ export const data = {
     image_24,
   ],
   desc: {
-    project: 'Renovate Dr. Suthon House',
+    project: 'Renovate\nDr. Suthon House',
     owner: '',
     location: 'Intersection Fai Chai, Bangkok',
     architect: 'Shine House 956',
