@@ -1,21 +1,20 @@
 import { useRef, useEffect } from 'react';
 import _ from 'lodash';
 import { contact } from '../assets/data/contact/contact';
-import { messagePageConfig } from '../constants/config';
 
 export default function SiteFooter() {
   const MessengerRef = useRef();
 
   useEffect(() => {
     if (MessengerRef.current) {
-      MessengerRef.current.setAttribute('page_id', messagePageConfig.page_id);
+      MessengerRef.current.setAttribute('page_id', '104682525445360');
       MessengerRef.current.setAttribute('attribution', 'biz_inbox');
     }
 
     window.fbAsyncInit = function () {
       window.FB.init({
         xfbml: true,
-        version: messagePageConfig.page_version,
+        version: 'v18.0',
       });
     };
 
