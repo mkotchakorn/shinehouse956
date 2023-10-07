@@ -41,7 +41,7 @@ export default function SiteFooter() {
           <div ref={MessengerRef} id='fb-customer-chat' className='fb-customerchat'></div>
         </div>
         <div id='line' className={`${blog}`}>
-          <div onClick={() => window.open(line.path, '_blank', 'noreferrer')} className='w-6 h-6 text-white'>
+          <div onClick={() => window.open(line.path, '_blank', 'noreferrer')} className='w-6 h-6 !text-white'>
             {line.icon}
           </div>
         </div>
